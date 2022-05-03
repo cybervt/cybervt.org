@@ -19,6 +19,7 @@ import {
   TableRow,
   TableCell,
   TableBody,
+  Link as MuiLink,
   Paper,
 } from '@mui/material';
 import React from 'react';
@@ -93,6 +94,13 @@ export default function BugReport({bugReport}: {bugReport: any}) {
               tbody({children}) {
                 return <TableBody>{children}</TableBody>;
               },
+              a({href, children}) {
+                return (
+                  <MuiLink href={href} sx={{textDecoration: 'none'}}>
+                    {children}
+                  </MuiLink>
+                );
+              },
             }}
             remarkPlugins={[remarkGfm]}
           />
@@ -112,9 +120,10 @@ export default function BugReport({bugReport}: {bugReport: any}) {
           <CardMedia
             sx={{
               display: 'flex',
-              width: '256px',
-              height: '256px',
+              width: '200px',
+              height: '200px',
               margin: 'auto',
+              borderRadius: 2,
             }}
             component="img"
             image={bugReport.author.picture.url}
@@ -123,7 +132,7 @@ export default function BugReport({bugReport}: {bugReport: any}) {
           <Box
             sx={{
               display: 'flex',
-              flex: '1 0 256px',
+              flex: '1 0 200px',
             }}
           >
             <CardContent>

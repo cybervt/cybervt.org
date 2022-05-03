@@ -14,14 +14,20 @@ export default function Reports({bugs}: {bugs: any[]}) {
   /* If bugs.cveId is undefined, then set it to an empty string. */
   const rows = bugs.map(bug => ({...bug, cveId: bug.cveId || 'N/A'}));
   const columns: GridColDef[] = [
-    {field: 'year', headerName: 'Year', flex: 1},
-    {field: 'cveId', headerName: 'CVE-ID', flex: 2},
-    {field: 'product', headerName: 'Product', flex: 3},
-    {field: 'vulnerability', headerName: 'Vulnerability', flex: 3},
+    {field: 'year', headerName: 'Year', flex: 1, minWidth: 100},
+    {field: 'cveId', headerName: 'CVE-ID', flex: 2, minWidth: 200},
+    {field: 'product', headerName: 'Product', flex: 3, minWidth: 300},
+    {
+      field: 'vulnerability',
+      headerName: 'Vulnerability',
+      flex: 3,
+      minWidth: 300,
+    },
     {
       field: 'report',
       headerName: 'Report',
       flex: 1,
+      minWidth: 100,
       renderCell: params => {
         /* Get the report URL from the bug object. */
         const bugReportObj = params.row.bugReport;
@@ -36,7 +42,7 @@ export default function Reports({bugs}: {bugs: any[]}) {
             <Button
               variant="contained"
               color="primary"
-              sx={{textTransform: 'none'}}
+              sx={{textTransform: 'none', width: '100%'}}
             >
               View
             </Button>
@@ -59,12 +65,14 @@ export default function Reports({bugs}: {bugs: any[]}) {
           policies.
         </Card>
         <Card sx={{p: 2, borderRadius: 2, boxShadow: 4}}>
-          <Box>
+          {/* Get breakpoint value of sm */}
+
+          <Box width="100%">
             <DataGrid
               autoHeight
-              sx={{flexGrow: 1}}
               rows={rows}
               columns={columns}
+              isRowSelectable={() => false}
               pageSize={10}
               rowsPerPageOptions={[10]}
             />

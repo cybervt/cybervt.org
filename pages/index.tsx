@@ -65,7 +65,7 @@ function AboutBlurbMobile() {
         <CardMedia
           sx={{maxHeight: 300, width: 'auto', margin: 'auto'}}
           component="img"
-          image="img/cerne-headshot-transparent.png"
+          image="/assets/img/cerne-headshot-transparent.png"
         />
       </Box>
       <Box>
