@@ -20,16 +20,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import {GlobalContext, Page} from '../src/Config';
+import {GlobalContext, Page, SiteURL} from '../src/Config';
 
 /* Make NavigationProps type with pages and toggleColorMode properties */
 export type NavigationProps = {
   pages: Page[];
   toggleColorMode: () => void;
 };
-
-/* TODO: Make this more global */
-const appName = 'cerne.xyz';
 
 export function MobileAppBar(props: NavigationProps) {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -51,7 +48,7 @@ export function MobileAppBar(props: NavigationProps) {
           >
             <MenuIcon />
           </IconButton>
-          {appName}
+          {SiteURL}
         </Box>
         <Box>
           <IconButton
@@ -101,7 +98,7 @@ function DesktopAppBar(props: NavigationProps) {
           </Link>
           <Link href="/" passHref>
             <Button color="inherit" sx={{textTransform: 'none'}} variant="text">
-              {appName}
+              {SiteURL}
             </Button>
           </Link>
         </Box>

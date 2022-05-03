@@ -1,3 +1,3 @@
 module.exports = {
-  siteUrl: 'https://cerne.xyz/',
+  siteUrl: 'https://cybervt.org/',
 };
