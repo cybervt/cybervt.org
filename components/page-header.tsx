@@ -7,7 +7,7 @@ export default function PageHeader(props: PageProps) {
 	const header = (
 		<Box textAlign='center' p={6} fontWeight='bold' bgcolor='primary.main'>
 			<Stack spacing={2}>
-				<Typography color='primary.contrastText' variant='h3' fontFamily='monospace'>$ ./{props.title.toLowerCase()}</Typography>
+				<Typography color='primary.contrastText' variant='h3' fontFamily='monospace'>$ ./{props.title?.toLowerCase()}</Typography>
 				<Typography color='primary.contrastText' fontFamily='monospace'>{props.description}</Typography>
 			</Stack>
 		</Box>
