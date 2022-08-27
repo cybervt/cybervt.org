@@ -1,5 +1,5 @@
 {
-  "name": "cerne.xyz",
+  "name": "cybervt.org",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,7 @@
     "@mui/icons-material": "^5.6.2",
     "@mui/material": "^5.6.2",
     "@mui/x-data-grid": "^5.10.0",
-    "@next/eslint-plugin-next": "^12.1.6",
+    "@next/eslint-plugin-next": "^12.2.5",
     "@types/node": "^17.0.25",
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.1",
@@ -19,7 +19,6 @@
     "graphql": "^16.4.0",
     "graphql-request": "^4.2.0",
     "next": "^12.1.5",
-    "next-sitemap": "^2.5.20",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-markdown": "^8.0.3",
@@ -32,18 +31,19 @@
   "scripts": {
     "start": "next start",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "dev": "next dev",
-    "lint": "gts lint",
-    "clean": "gts clean",
+    "lint": "xo",
     "compile": "tsc",
-    "fix": "gts fix",
+    "fix": "xo --fix",
     "prepare": "npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run lint"
   },
   "xo": {
-    "extends": "xo-react",
+    "extends": [
+      "xo-react",
+      "plugin:@next/next/core-web-vitals"
+    ],
     "rules": {
       "import/extensions": [
         "error",

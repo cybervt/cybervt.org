@@ -1,5 +1,7 @@
+import {relative} from 'node:path';
 import React from 'react';
 import {Typography, Stack, Grid, Box} from '@mui/material';
+import Image from 'next/image';
 import {siteNavigation} from '../src/config';
 
 type CyberVtExec = {
@@ -75,7 +77,7 @@ export default function About() {
 					{currentExec.map(element => (
 						<Grid key={element.name} item xs={12} md={4}>
 							<Stack spacing={0}>
-								<img width='100%' src={element.img}/>
+								<Image width='100%' height='100%' layout='responsive' objectFit='contain' src={element.img}/>
 								<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.secondary'>
 									{element.name}
 								</Typography>
