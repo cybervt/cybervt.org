@@ -2,127 +2,91 @@
 import React from 'react';
 
 /* MUI imports */
-import {Box, CssBaseline} from '@mui/material';
+import {Box, CssBaseline, Typography} from '@mui/material';
 import {ThemeProvider, createTheme} from '@mui/material/styles';
 
-import {NavigationBar} from './NavigationBar';
-import {GlobalContext, SiteNavigation} from '../src/Config';
-import Footer from './Footer';
-// import Footer from './Footer'
-// const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
-
-const maxMobileSize = 900;
-
-type LayoutProps = {
-  children: React.ReactNode;
-};
+/* My imports */
+import {globalContext, siteNavigation, GlobalVars, cybervtTheme, PageProps, LayoutProps, maxMobileSize} from '../src/config';
+import {NavigationBar} from './navigation-bar';
+import Footer from './footer';
+import PageHeader from './page-header';
 
 export default function BaseLayout({children}: LayoutProps) {
-  /* Declare states */
-  const [colorMode, setColorMode] = React.useState<
-    'light' | 'dark' | undefined
-  >(undefined);
-  const [windowInnerWidth, setWindowInnerWidth] = React.useState(0);
+	/* Declare states */
+	const [windowInnerWidth, setWindowInnerWidth] = React.useState(1024);
 
-  /* Calculate isDesktop using Memo */
-  const isDesktop = React.useMemo(() => {
-    return windowInnerWidth > maxMobileSize;
-  }, [windowInnerWidth]);
+	/* Calculate isDesktop using Memo */
+	const isDesktop = React.useMemo(() => windowInnerWidth > maxMobileSize, [windowInnerWidth]);
 
-  /* Create theme based on color mode */
-  const theme = React.useMemo(
-    () =>
-      createTheme({
-        palette: {
-          mode: colorMode,
-        },
-      }),
-    [colorMode]
-  );
+	/* Create Memo for the global context */
+	const globalProviderObject = React.useMemo<GlobalVars>(() => ({isDesktop}), [isDesktop]);
 
-  /* When the page is loaded, we can display everything */
-  const isLoaded = React.useMemo(
-    () => windowInnerWidth > 0 && colorMode !== undefined,
-    [windowInnerWidth, colorMode]
-  );
+	/* When the page is loaded, we can display everything */
+	const isLoaded = React.useMemo(
+		() => windowInnerWidth > 0,
+		[windowInnerWidth],
+	);
 
-  /* On component mount, get inner width and set it */
-  React.useEffect(() => {
-    setWindowInnerWidth(window.innerWidth);
-  }, []);
+	/* On component mount, get inner width and set it */
+	React.useEffect(() => {
+		setWindowInnerWidth(window.innerWidth);
+	}, []);
 
-  /* Update color mode when system color mode changes */
-  React.useEffect(() => {
-    const handleColorChange = () => {
-      setColorMode(
-        window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
-          : 'light'
-      );
-    };
+	/* Update window inner width when it changes */
+	React.useEffect(() => {
+		const resizeWindow = () => {
+			setWindowInnerWidth(window.innerWidth);
+		};
 
-    /* When component mounts, call this function to set the mode */
-    handleColorChange();
+		window.addEventListener('resize', resizeWindow);
 
-    window
-      .matchMedia('(prefers-color-scheme: dark)')
-      .addEventListener('change', handleColorChange);
+		return () => {
+			window.removeEventListener('resize', resizeWindow);
+		};
+	}, []);
 
-    return () => {
-      window
-        .matchMedia('(prefers-color-scheme: dark)')
-        .removeEventListener('change', handleColorChange);
-    };
-  }, []);
+	/* These are the properties of the current page that is loaded */
+	const pageProps: PageProps = children.props as PageProps;
 
-  /* Update window inner width when it changes */
-  React.useEffect(() => {
-    const resizeWindow = () => {
-      setWindowInnerWidth(window.innerWidth);
-    };
+	/* JSX */
+	return (
+		<ThemeProvider theme={cybervtTheme}>
+			<CssBaseline/>
+			<globalContext.Provider
+				value={globalProviderObject}
+			>
+				<Box display='flex' flexDirection='column' minHeight='100vh'>
+					<NavigationBar/>
 
-    window.addEventListener('resize', resizeWindow);
+					<PageHeader {...pageProps}/>
+					{pageProps.padding ? (
+						<Box
+							width='100%'
+							height='100%'
+							maxWidth='lg'
+							p={8}
+							flexGrow={1}
+							sx={{margin: '0 auto'}}
+						>
+							{children}
+						</Box>
+					) : (
+						<Box
+							width='100%'
+							height='100%'
+							flexGrow={1}
+							sx={{margin: '0 auto'}}
+						>
+							{children}
+						</Box>
+					)}
 
-    return () => {
-      window.removeEventListener('resize', resizeWindow);
-    };
-  }, []);
-
-  /* Function to toggle color mode */
-  const toggleColorMode = () => {
-    setColorMode(colorMode === 'light' ? 'dark' : 'light');
-  };
-
-  /* JSX */
-  return isLoaded ? (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <GlobalContext.Provider
-        value={{currentColorMode: colorMode!, isDesktop: isDesktop}}
-      >
-        <Box display="flex" flexDirection="column" minHeight="100vh">
-          <NavigationBar
-            pages={SiteNavigation}
-            toggleColorMode={toggleColorMode}
-          />
-          <Box
-            maxWidth="lg"
-            width="100%"
-            height="100%"
-            flexGrow={1}
-            sx={{margin: '0 auto'}}
-            p={4}
-          >
-            {children}
-          </Box>
-          {/* Make a sticky footer that is always at the bottom */}
-          <Box sx={{width: '100%'}}>
-            <Footer />
-          </Box>
-        </Box>
-      </GlobalContext.Provider>
-    </ThemeProvider>
-  ) : (
-    <></>
-  );
+					{/* Make a sticky footer that is always at the bottom */}
+					<Box sx={{width: '100%'}}>
+						<Footer/>
+					</Box>
+				</Box>
+			</globalContext.Provider>
+		</ThemeProvider>
+	);
 }

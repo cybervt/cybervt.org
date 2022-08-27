@@ -1,28 +1,20 @@
-import {Typography, Stack} from '@mui/material';
+import React from 'react';
+import {Typography, Stack, Link as MUILink} from '@mui/material';
+import Link from 'next/link';
+import {PageProps, siteNavigation} from '../src/config';
 
 export default function Custom404() {
-  return (
-    <Stack spacing={2}>
-      <Typography
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-        variant="h4"
-      >
-        404 - Page Not Found
-      </Typography>
-      <Typography
-        variant="body1"
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        Please let me know if you think this is an error by contacting me.
-      </Typography>
-    </Stack>
-  );
+	return (
+		<Stack spacing={2}>
+			<Typography
+				variant='body1'
+			>
+				Please let us know if you think this is an error by contacting CyberVT leadership. You can get in touch with us through our <Link passHref href='/contact'><MUILink>contact</MUILink></Link> page.
+			</Typography>
+		</Stack>
+	);
+}
+
+export async function getStaticProps() {
+	return {props: siteNavigation.notFound};
 }

@@ -1,3 +1,1 @@
-module.exports = {
-  siteUrl: 'https://cybervt.org/',
-};
+export const siteUrl = 'https://cybervt.org/';

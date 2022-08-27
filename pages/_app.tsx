@@ -1,24 +1,24 @@
 /* React imports */
-import type {ReactElement, ReactNode} from 'react';
+import React from 'react';
 
 /* Next.js imports */
 import type {NextPage} from 'next';
 import type {AppProps} from 'next/app';
 
-import BaseLayout from '../components/Layout';
+import BaseLayout from '../components/layout';
 
 type NextPageWithLayout = NextPage & {
-  getLayout?: (page: ReactElement) => ReactNode;
+	getLayout?: (page: React.ReactElement) => React.ReactNode;
 };
 
 type AppPropsWithLayout = AppProps & {
-  Component: NextPageWithLayout;
+	Component: NextPageWithLayout;
 };
 
 export default function MyApp({Component, pageProps}: AppPropsWithLayout) {
-  return (
-    <BaseLayout>
-      <Component {...pageProps} />
-    </BaseLayout>
-  );
+	return (
+		<BaseLayout>
+			<Component {...pageProps}/>
+		</BaseLayout>
+	);
 }
