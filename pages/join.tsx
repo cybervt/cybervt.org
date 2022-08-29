@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography, Stack, Link as MUILink} from '@mui/material';
+import {Typography, Stack, Link as MuiLink} from '@mui/material';
 import Link from 'next/link';
 import {globalContext, siteNavigation} from '../src/config';
 
@@ -7,7 +7,10 @@ export default function Join() {
 	return (
 		<Stack spacing={2}>
 			<Typography>
-				Joining CyberVT is as simple as attending one of our meetings. You can find our schedule on the <Link passHref href='/calendar'><MUILink>calendar</MUILink></Link> page.
+				Joining CyberVT is as simple as attending one of our meetings. You can find our schedule on the <Link passHref href='/calendar'><MuiLink>calendar</MuiLink></Link> page.
+			</Typography>
+			<Typography>
+				If you are a student, you can become a voting member by joining our <MuiLink href='https://gobblerconnect.vt.edu/organization/csecvt' target='_blank' rel='noreferrer'>Gobblerconnect</MuiLink> page.
 			</Typography>
 			<Typography>
 				The club is open to all majors and skill levels, but we are mostly comprised of Computer Science, Computer Engineering, and Business Information Technology students. Our goal is to foster an environment of curiosity and engagement in which anyone can learn cybersecurity topics, regardless of skill level. CyberVT is a diverse club of individuals with interests in many niches in the field of cybersecurity.
