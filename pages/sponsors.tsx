@@ -52,10 +52,10 @@ export default function Sponsors() {
 			<span>
 				<Typography>CyberVT greatly appreciates your interest in sponsoring the club. The perks of your donation lasts for one year. Any swag that is promoted as a sponsorship tier is contingent on availability of the swag. Each sponsorship tier includes all of the benefits of the previous tiers.</Typography>
 				<Box p={2}/>
-				<Grid container justifyContent='space-evenly' spacing={8}>
+				<Grid container justifyContent='space-evenly' spacing={2}>
 					{sponsorshipTiers.map(element => (
 						<Grid key={element.name} item xs={12} md={4}>
-							<Stack spacing={1}>
+							<Stack spacing={2}>
 								<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.secondary'>
 									{element.name.toUpperCase()}
 								</Typography>
