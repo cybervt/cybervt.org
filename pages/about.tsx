@@ -16,7 +16,7 @@ const currentExec: CyberVtExec[] = [
 		name: 'Grant Smith',
 		position: 'President',
 		img: '/img/exec/gsmith.jpg',
-		bio: 'Grant Smith is an offensive security professional specializing in API hacking. In high school, he was a technical support specialist, but in recent years he has taken up critical roles at the National Security Agency, Army Cyber Command, and The Walt Disney Company doing offensive security.',
+		bio: 'Grant Smith is an offensive security professional specializing in API hacking. In high school, he was a technical support specialist, but in recent years he has taken up critical roles at the Department of Defense and The Walt Disney Company doing offensive security.',
 	},
 	{
 		name: 'Christian Johnson',
