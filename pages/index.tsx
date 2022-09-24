@@ -15,10 +15,10 @@ export default function Index() {
 				<CardMedia
 					component='img'
 					alt='Contemplative Reptile'
-					image='img/presentation.jpeg'
+					image='img/day1.jpeg'
 					title='CyberVT Background'
 					height='400px'
-					sx={{position: 'relative', filter: 'blur(10px)'}}
+					sx={{position: 'relative', filter: 'blur(5px)'}}
 				/>
 				<Box
 					sx={{position: 'absolute',
