@@ -59,6 +59,7 @@ export default function Index() {
 					<MuiLink component={Link} href='/about'>
 						<Button variant='contained'>Learn More</Button>
 					</MuiLink>
+					<img [src]="img/day1.jpg" height="200"> <br/>
 				</Stack>
 			</Box>
 
