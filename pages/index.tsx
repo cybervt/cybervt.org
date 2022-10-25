@@ -14,7 +14,7 @@ export default function Index() {
 			<Card sx={{position: 'relative'}}>
 				<CardMedia
 					component='img'
-					alt='Contemplative Reptile'
+					alt='CyberVT Background'
 					image='img/day1.jpeg'
 					title='CyberVT Background'
 					height='400px'

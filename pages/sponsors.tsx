@@ -1,7 +1,27 @@
 import React from 'react';
-import {Typography, Stack, Grid, Box, List, ListItem, ListItemAvatar, Avatar, ListItemText} from '@mui/material';
-import StarIcon from '@mui/icons-material/Star';
+import {Typography, Stack, Grid, Box, Link as MuiLink} from '@mui/material';
+import Image from 'next/image';
 import {siteNavigation} from '../src/config';
+
+type Sponsor = {
+	/* The company name */
+	name: string;
+
+	/* The company URL */
+	url: string;
+
+	/* The sponsorship tier of the sponsor. */
+	sponsorType: string;
+
+	/* A short description of the sponsor. */
+	description: string;
+
+	/* The location of the logo, e.g. '/img/sponsors/company.png' */
+	logoLocation: string;
+
+	/* We use this to track the last sponsor so we can remove them after a year */
+	lastDonation: Date;
+};
 
 type SponsorshipTier = {
 	name: string;
@@ -9,6 +29,25 @@ type SponsorshipTier = {
 	priceMax?: number;
 	perks: string[];
 };
+
+const sponsors: Sponsor[] = [
+	{
+		name: 'Triple Point Security',
+		url: 'https://www.triplepointsecurity.com/',
+		sponsorType: 'Platinum',
+		description: 'Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help our clients protect their data and systems from cyber threats.',
+		logoLocation: '/img/sponsors/triplepointsecurity.png',
+		lastDonation: new Date('2022-10-25'),
+	},
+].filter(sponsor => {
+	/* Filter sponsors that have donated in the last year */
+	const oneYearAgo = new Date();
+	oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+	return sponsor.lastDonation > oneYearAgo;
+}).sort((a, b) =>
+	/* Sort sponsors by donation date */
+	b.lastDonation.getTime() - a.lastDonation.getTime(),
+);
 
 const sponsorshipTiers: SponsorshipTier[] = [
 	{
@@ -75,12 +114,49 @@ export default function Sponsors() {
 					))}
 				</Grid>
 			</span>
-			<Typography variant='h4'>Current Sponsors</Typography>
-			<Typography>As CyberVT ramps up for the next academic year, we are looking for sponsors. In the past, we&apos;ve been sponsored by Triple Point Security, Virginia Tech IT Security Office, Eastman Chemical, Booz Allen Hamilton, and many others.</Typography>
 			<Typography variant='h4'>Recruiting</Typography>
 			<Typography>
 				We welcome corporate representatives to give technical talks or workshops at our meetings on the condition that there is no recruiting. That said, we do offer sponsorship tiers that allow recruiting at the end of technical talks.
 			</Typography>
+
+			{ /* If there are no sponsors, don't show the sponsors section */}
+			{sponsors.length <= 0 && (
+				<>
+					<Typography variant='h4'>Current Sponsors</Typography>
+					<Typography>As CyberVT ramps up for the next academic year, we are looking for sponsors. In the past, we&apos;ve been sponsored by Triple Point Security, Virginia Tech IT Security Office, Eastman Chemical, Booz Allen Hamilton, and many others.</Typography>
+				</>
+			)}
+
+			{sponsors.length > 0 && (
+				<>
+					<Typography variant='h4'>Current Sponsors</Typography>
+					<Grid container justifyContent='space-evenly' spacing={2}>
+						{sponsors.map(sponsor => (
+							<Grid key={sponsor.name} item xs={12} md={4}>
+								<Stack key={sponsor.name} spacing={1}>
+									{/* Add logo on its own line. Use 100% width */}
+									<Box display='flex' justifyContent='center' width='100%'>
+										<Image src={sponsor.logoLocation} width='300px' height='100%' objectFit='contain'/>
+									</Box>
+									{/* Add name on its own line. Use 100% width */}
+									<MuiLink href={sponsor.url} target='_blank' rel='noreferrer'>
+										<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.secondary'>
+											{sponsor.name}
+										</Typography>
+									</MuiLink>
+
+									<Typography textAlign='center' color='text.secondary'>
+										{sponsor.sponsorType}
+									</Typography>
+									<Typography textAlign='justify'>
+										{sponsor.description}
+									</Typography>
+								</Stack>
+							</Grid>
+						))}
+					</Grid>
+				</>
+			)}
 		</Stack>
 	);
 }
