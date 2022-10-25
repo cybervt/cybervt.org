@@ -35,7 +35,7 @@ const sponsors: Sponsor[] = [
 		name: 'Triple Point Security',
 		url: 'https://www.triplepointsecurity.com/',
 		sponsorType: 'Platinum',
-		description: 'Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help our clients protect their data and systems from cyber threats.',
+		description: 'Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.',
 		logoLocation: '/img/sponsors/triplepointsecurity.png',
 		lastDonation: new Date('2022-10-25'),
 	},
