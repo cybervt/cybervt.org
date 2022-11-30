@@ -45,7 +45,7 @@ const sponsors: Sponsor[] = [
 		sponsorType: 'Platinum',
 		description: 'Northrop Grumman is an American global aerospace and defense technology company. They provide various cybersecurity services to the government.',
 		logoLocation: '/img/sponsors/northropgrumman.png',
-		lastDonation: new Date('2022-11-10'),
+		lastDonation: new Date('2022-11-30'),
 	},
 ].filter(sponsor => {
 	/* Filter sponsors that have donated in the last year */
