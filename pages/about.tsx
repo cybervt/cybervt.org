@@ -4,6 +4,9 @@ import {Typography, Stack, Grid, Box} from '@mui/material';
 import Image from 'next/image';
 import {siteNavigation} from '../src/config';
 
+/* Image imports */
+import presentationImage from '../public/img/presentation.jpeg';
+
 type CyberVtExec = {
 	name: string;
 	position: string;
@@ -61,6 +64,10 @@ export default function About() {
 			<Typography>
 				Pending interest and speaker availability, CyberVT offers weekly technical presentations during our advanced meetings. In the past, we&apos;ve given talks on hacking video games, reverse engineering mobile applications, software obfuscation techniques, and malware analysis.
 			</Typography>
+			<Image alt='Technical presentation' src={presentationImage}/>
+			<Typography fontStyle='italic' align='center'>
+				Former CyberVT member giving a technical presentation on reverse engineering the mobile application of a popular MMORPG game.
+			</Typography>
 			<Typography
 				variant='h4'
 			>
@@ -77,7 +84,7 @@ export default function About() {
 					{currentExec.map(element => (
 						<Grid key={element.name} item xs={12} md={4}>
 							<Stack spacing={0}>
-								<Image width='100%' height='100%' layout='responsive' objectFit='contain' src={element.img}/>
+								<Image alt={'Photo of ' + element.name} width='100%' height='100%' layout='responsive' objectFit='contain' src={element.img}/>
 								<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.secondary'>
 									{element.name}
 								</Typography>
