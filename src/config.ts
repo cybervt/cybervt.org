@@ -73,6 +73,14 @@ export const siteNavigation: SiteNavigation = {
 		title: 'About',
 		description: 'About CyberVT',
 	},
+	SummitCTF: {
+		url: 'https://summitctf.org',
+		showInNav: true,
+		showHeader: true,
+		padding: true,
+		title: 'Summit CTF',
+		description: 'CyberVT\'s Annual CTF',
+	},
 	join: {
 		url: '/join',
 		showInNav: true,
