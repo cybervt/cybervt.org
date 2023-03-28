@@ -1,7 +1,20 @@
 import React from 'react';
-import {Typography, Stack, Grid, Box, Link as MuiLink} from '@mui/material';
+import { Typography, Stack, Grid, Box, Link as MuiLink } from '@mui/material';
 import Image from 'next/image';
-import {siteNavigation} from '../src/config';
+import { siteNavigation } from '../src/config';
+
+interface SponsorTierOrder {
+	[key: string]: number;
+}
+
+const tierOrder: SponsorTierOrder = {
+	"Donations": 4,
+	"Bronze": 3,
+	"Silver": 2,
+	"Gold": 1,
+	"Platinum": 0
+};
+
 
 type Sponsor = {
 	/* The company name */
@@ -47,15 +60,29 @@ const sponsors: Sponsor[] = [
 		logoLocation: '/img/sponsors/northropgrumman.png',
 		lastDonation: new Date('2022-11-30'),
 	},
+	{
+		name: 'HII',
+		url: 'https://hii.com',
+		sponsorType: 'Silver',
+		description: 'HII is a global engineering and defense technologies provider, and recognized worldwide as America’s largest shipbuilder.',
+		logoLocation: '/img/sponsors/hii.svg',
+		lastDonation: new Date('2023-03-27'),
+	},
 ].filter(sponsor => {
 	/* Filter sponsors that have donated in the last year */
 	const oneYearAgo = new Date();
 	oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
 	return sponsor.lastDonation > oneYearAgo;
-}).sort((a, b) =>
-	/* Sort sponsors by donation date */
-	b.lastDonation.getTime() - a.lastDonation.getTime(),
-);
+}).sort((a, b) => {
+	/* Sort sponsors by sponsorship tier */
+	const aTier = tierOrder[a.sponsorType];
+	const bTier = tierOrder[b.sponsorType];
+	if (aTier !== bTier) {
+		return aTier - bTier;
+	}
+	/* Sort sponsors within the same tier by last donation date */
+	return b.lastDonation.getTime() - a.lastDonation.getTime();
+});
 
 const sponsorshipTiers: SponsorshipTier[] = [
 	{
@@ -98,7 +125,7 @@ export default function Sponsors() {
 			<Typography variant='h4'>Sponsorship Tiers</Typography>
 			<span>
 				<Typography>CyberVT greatly appreciates your interest in sponsoring the club. The perks of your donation lasts for one year. Any swag that is promoted as a sponsorship tier is contingent on availability of the swag. Each sponsorship tier includes all of the benefits of the previous tiers.</Typography>
-				<Box p={2}/>
+				<Box p={2} />
 				<Grid container justifyContent='space-evenly' spacing={2}>
 					{sponsorshipTiers.map(element => (
 						<Grid key={element.name} item xs={12} md={4}>
@@ -144,7 +171,7 @@ export default function Sponsors() {
 								<Stack key={sponsor.name} spacing={1}>
 									{/* Add logo on its own line. Use 100% width */}
 									<Box display='flex' justifyContent='center' width='100%'>
-										<Image src={sponsor.logoLocation} width='300px' height='100%' objectFit='contain'/>
+										<Image src={sponsor.logoLocation} width='300px' height='100%' objectFit='contain' />
 									</Box>
 									{/* Add name on its own line. Use 100% width */}
 									<MuiLink href={sponsor.url} target='_blank' rel='noreferrer'>
@@ -170,5 +197,5 @@ export default function Sponsors() {
 }
 
 export async function getStaticProps() {
-	return {props: siteNavigation.sponsors};
+	return { props: siteNavigation.sponsors };
 }
