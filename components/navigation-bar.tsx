@@ -17,7 +17,7 @@ import {
 	Stack,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import {getNavArray, globalContext, PageProps, siteTitle} from '../src/config';
+import { getNavArray, globalContext, PageProps, siteTitle } from '../src/config';
 
 export function MobileAppBar() {
 	const [isOpen, setIsOpen] = React.useState(false);
@@ -29,7 +29,7 @@ export function MobileAppBar() {
 	};
 
 	return (
-		<AppBar position='static' sx={{padding: 2}}>
+		<AppBar position='static' sx={{ padding: 2 }}>
 			<Toolbar>
 				<Box flexGrow={1}>
 					<IconButton
@@ -37,21 +37,21 @@ export function MobileAppBar() {
 						aria-label='Menu'
 						onClick={toggleNavigationBarOpen}
 					>
-						<MenuIcon/>
+						<MenuIcon />
 					</IconButton>
 					{siteTitle.toLowerCase()}
 				</Box>
 			</Toolbar>
 			<Collapse unmountOnExit in={isOpen} timeout='auto'>
 				<List component='nav'>
-					<ListItem key='/' style={{cursor: 'not-allowed'}}>
-						<Link passHref href='/'>
+					<ListItem key='/' style={{ cursor: 'not-allowed' }}>
+						<Link href='/' style={{ color: 'white', textDecoration: 'none' }}>
 							<Button color='inherit'>home</Button>
 						</Link>
 					</ListItem>
 					{getNavArray().filter(c => c.showInNav).map(comp => (
-						<ListItem key={comp.url} style={{cursor: 'not-allowed'}}>
-							<Link passHref href={comp.url}>
+						<ListItem key={comp.url} style={{ cursor: 'not-allowed' }}>
+							<Link href={comp.url} style={{ color: 'white', textDecoration: 'none' }} {...(comp.externalLink && { target: "_blank" })}>
 								<Button color='inherit'>{comp.title.toLowerCase()}</Button>
 							</Link>
 						</ListItem>
@@ -66,11 +66,11 @@ function DesktopAppBar() {
 	const context = React.useContext(globalContext);
 
 	return (
-		<AppBar position='static' sx={{padding: 2}}>
+		<AppBar position='static' sx={{ padding: 2 }}>
 			<Toolbar>
 				<Box flexGrow={1}>
-					<Link passHref href='/'>
-						<Button color='inherit' sx={{textTransform: 'none'}} variant='text'>
+					<Link style={{ color: 'white', textDecoration: 'none' }} href='/'>
+						<Button color='inherit' sx={{ textTransform: 'none' }} variant='text'>
 							{siteTitle.toLowerCase()}
 						</Button>
 					</Link>
@@ -79,21 +79,21 @@ function DesktopAppBar() {
 				<Box>
 					<Stack direction='row' spacing={2}>
 						{getNavArray().filter(c => c.showInNav).map(comp => (
-							<Link key={comp.url} passHref href={comp.url}>
+							<Link key={comp.url} style={{ color: 'white', textDecoration: 'none' }} href={comp.url}  {...(comp.externalLink && { target: "_blank" })}>
 								<Button
 									key={comp.title}
 									color='inherit'
-									sx={{textTransform: 'none'}}
+									sx={{ textTransform: 'none' }}
 									variant='text'
 								>
 									{comp.title.toLowerCase()}
 								</Button>
 							</Link>
 						))}
-						<Link passHref href='/'>
+						<Link href='/' style={{ color: 'white', textDecoration: 'none' }}>
 							<Button
 								color='inherit'
-								sx={{textTransform: 'none'}}
+								sx={{ textTransform: 'none' }}
 								variant='outlined'
 							>
 								home
@@ -109,8 +109,8 @@ function DesktopAppBar() {
 export function NavigationBar() {
 	const context = React.useContext(globalContext);
 	return context.isDesktop ? (
-		<DesktopAppBar/>
+		<DesktopAppBar />
 	) : (
-		<MobileAppBar/>
+		<MobileAppBar />
 	);
 }

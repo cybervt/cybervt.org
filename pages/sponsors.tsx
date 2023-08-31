@@ -171,7 +171,7 @@ export default function Sponsors() {
 								<Stack key={sponsor.name} spacing={1}>
 									{/* Add logo on its own line. Use 100% width */}
 									<Box display='flex' justifyContent='center' width='100%'>
-										<Image src={sponsor.logoLocation} width='300px' height='100%' objectFit='contain' />
+										<Image src={sponsor.logoLocation} alt={'Logo of ' + sponsor.name} width="0" height="0" sizes="100vw" style={{ width: '100%', height: 'auto' }} />
 									</Box>
 									{/* Add name on its own line. Use 100% width */}
 									<MuiLink href={sponsor.url} target='_blank' rel='noreferrer'>

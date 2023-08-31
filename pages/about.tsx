@@ -1,8 +1,8 @@
-import {relative} from 'node:path';
+import { relative } from 'node:path';
 import React from 'react';
-import {Typography, Stack, Grid, Box} from '@mui/material';
+import { Typography, Stack, Grid, Box } from '@mui/material';
 import Image from 'next/image';
-import {siteNavigation} from '../src/config';
+import { siteNavigation } from '../src/config';
 
 /* Image imports */
 import presentationImage from '../public/img/presentation.jpeg';
@@ -16,22 +16,22 @@ type CyberVtExec = {
 
 const currentExec: CyberVtExec[] = [
 	{
-		name: 'Grant Smith',
+		name: 'Thomas Rydzewski',
 		position: 'President',
-		img: '/img/exec/gsmith.jpg',
-		bio: 'Grant Smith is an offensive security professional specializing in web hacking. In high school, he was a technical support specialist, but in recent years he has taken up critical roles at the Department of Defense and The Walt Disney Company doing offensive security.',
+		img: '/img/exec/avatar.jpg',
+		bio: 'Thomas Rydzewski is graduating in May 2024 with a B.S. Computer Science from Virginia Tech. He has worked in the government space and perseus a wide variety of interests.',
 	},
 	{
-		name: 'Christian Johnson',
+		name: 'Connor Bluestein',
 		position: 'Vice President',
-		img: '/img/exec/cjohnson.jpg',
-		bio: 'Christian Johnson has a passion for software reverse engineering. In his free time, he enjoys learning about malware triage. He has recently worked at Percival Engineering emulating embedded systems and testing these systems for security flaws.',
+		img: '/img/exec/cbluestein.jpg',
+		bio: 'Connor Bluestein is a junior in CMDA Cybersecurity and Cryptography. Since high school, he\'s been intrigued by cybersecurity. He previously led the Data Analysis Team, mastering tools like Splunk and Wireshark. He\'s competed in events like the NSA Cyber Exercise and SummitCTF. Connor aspires to work in federal cybersecurity, focusing on data analysis and offensive security. In the club, he aims to expand teams, launch certification programs, and spotlight members for sponsors. Beyond cybersecurity, he loves hiking, gym sessions, and pickleball.',
 	},
 	{
-		name: 'David Smits',
+		name: 'Erin Freck',
 		position: 'Treasurer',
-		img: '/img/exec/dsmits.jpg',
-		bio: 'David Smits is a sophomore majoring in Computer Science with minors in cybersecurity and math. David is interested in machine learning and automation in cybersecurity with a focus on web exploitation.',
+		img: '/img/exec/efreck.jpg',
+		bio: 'Erin Freck graduated in May 2023 with a B.S. Computer Engineering from Virginia Tech and is now pursuing a M.S. Computer Science.  She has worked with Google on their blue team and is now pursing an interest in reverse engineering and forensics.',
 	},
 ];
 
@@ -64,7 +64,7 @@ export default function About() {
 			<Typography>
 				Pending interest and speaker availability, CyberVT offers weekly technical presentations during our advanced meetings. In the past, we&apos;ve given talks on hacking video games, reverse engineering mobile applications, software obfuscation techniques, and malware analysis.
 			</Typography>
-			<Image alt='Technical presentation' src={presentationImage}/>
+			<Image alt='Technical presentation' src={presentationImage} layout='responsive' />
 			<Typography fontStyle='italic' align='center'>
 				Former CyberVT member giving a technical presentation on reverse engineering the mobile application of a popular MMORPG game.
 			</Typography>
@@ -79,12 +79,12 @@ export default function About() {
 				>
 					The executive body of CyberVT consists of a President, Vice President, and Treasurer. These are the students who have been elected by popular vote for the current academic year.
 				</Typography>
-				<Box p={2}/>
-				<Grid container justifyContent='space-evenly' spacing={8}>
+				<Box p={2} />
+				<Grid container spacing={8}>
 					{currentExec.map(element => (
 						<Grid key={element.name} item xs={12} md={4}>
 							<Stack spacing={0}>
-								<Image alt={'Photo of ' + element.name} width='100%' height='100%' layout='responsive' objectFit='contain' src={element.img}/>
+								<Image alt={'Photo of ' + element.name} width="0" height="0" sizes="100vw" src={element.img} style={{ width: '100%', height: 'auto' }} />
 								<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.secondary'>
 									{element.name}
 								</Typography>
@@ -116,5 +116,5 @@ export default function About() {
 }
 
 export async function getStaticProps() {
-	return {props: siteNavigation.about};
+	return { props: siteNavigation.about };
 }

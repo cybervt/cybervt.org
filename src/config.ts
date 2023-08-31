@@ -13,6 +13,8 @@ export type GlobalVars = {
 	isDesktop: boolean;
 };
 
+export const discordUrl = 'https://discord.gg/ghgpNdCctT';
+
 /** Create theme */
 export const cybervtTheme = createTheme({
 	components: {
@@ -48,6 +50,7 @@ export type LayoutProps = {
 };
 
 export type PageProps = {
+	externalLink: boolean;
 	showInNav: boolean;
 	showHeader: boolean;
 	padding: boolean;
@@ -68,22 +71,24 @@ export const siteNavigation: SiteNavigation = {
 	about: {
 		url: '/about',
 		showInNav: true,
+		externalLink: false,
 		showHeader: true,
 		padding: true,
 		title: 'About',
 		description: 'About CyberVT',
 	},
-	SummitCTF: {
-		url: 'https://summitctf.org',
-		showInNav: true,
-		showHeader: true,
-		padding: true,
-		title: 'Summit CTF',
-		description: 'CyberVT\'s Annual CTF',
-	},
+	// SummitCTF: {
+	// 	url: 'https://summitctf.org',
+	// 	showInNav: true,
+	// 	showHeader: true,
+	// 	padding: true,
+	// 	title: 'Summit CTF',
+	// 	description: 'CyberVT\'s Annual CTF',
+	// },
 	join: {
 		url: '/join',
 		showInNav: true,
+		externalLink: false,
 		showHeader: true,
 		padding: true,
 		title: 'Join',
@@ -92,6 +97,7 @@ export const siteNavigation: SiteNavigation = {
 	sponsors: {
 		url: '/sponsors',
 		showInNav: true,
+		externalLink: false,
 		showHeader: true,
 		padding: true,
 		title: 'Sponsors',
@@ -100,6 +106,7 @@ export const siteNavigation: SiteNavigation = {
 	calendar: {
 		url: '/calendar',
 		showInNav: true,
+		externalLink: false,
 		showHeader: true,
 		padding: true,
 		title: 'Calendar',
@@ -108,14 +115,25 @@ export const siteNavigation: SiteNavigation = {
 	contact: {
 		url: '/contact',
 		showInNav: true,
+		externalLink: false,
 		showHeader: true,
 		padding: true,
 		title: 'Contact',
 		description: 'Get in touch with CyberVT',
 	},
+	discord: {
+		url: discordUrl,
+		showInNav: true,
+		externalLink: true,
+		showHeader: true,
+		padding: true,
+		title: 'Discord',
+		description: 'Discord server invite',
+	},
 	home: {
 		url: '/',
 		showInNav: false,
+		externalLink: false,
 		showHeader: false,
 		padding: false,
 		title: 'Home',
@@ -124,6 +142,7 @@ export const siteNavigation: SiteNavigation = {
 	notFound: {
 		url: '/404',
 		showInNav: false,
+		externalLink: false,
 		showHeader: true,
 		padding: true,
 		title: '404',

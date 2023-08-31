@@ -1,4 +1,4 @@
-import {Card, Typography, Stack, CardContent, Box, Grid, Button, IconButton, Link} from '@mui/material';
+import { Card, Typography, Stack, CardContent, Box, Grid, Button, IconButton, Link } from '@mui/material';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
@@ -7,8 +7,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import React from 'react';
 
-import {red} from '@mui/material/colors';
-import {PageProps, siteNavigation} from '../src/config';
+import { red } from '@mui/material/colors';
+import { PageProps, discordUrl, siteNavigation } from '../src/config';
 
 export default function Contact() {
 	const myEmail = 'officers@cybervt.org';
@@ -23,16 +23,16 @@ export default function Contact() {
 					<Grid item xs={12} md={4}>
 						<Stack spacing={1}>
 							<Box textAlign='center'>
-								<ChatBubbleOutlineIcon color='primary' sx={{fontSize: 64}}/>
+								<ChatBubbleOutlineIcon color='primary' sx={{ fontSize: 64 }} />
 							</Box>
 							<Typography color='primary' variant='h5' textAlign='center'>
 								Discord
 							</Typography>
 							<Typography textAlign='justify'>
-								CyberVT has an official <Link href='https://discord.gg/ghgpNdCctT'>Discord server</Link> that we use as our primary medium of communication.
+								CyberVT has an official <Link href={discordUrl}>Discord server</Link> that we use as our primary medium of communication.
 							</Typography>
 
-							<Link href='https://discord.gg/ghgpNdCctT'>
+							<Link href={discordUrl}>
 								<Button fullWidth variant='contained'>Join Discord</Button>
 							</Link>
 						</Stack>
@@ -40,7 +40,7 @@ export default function Contact() {
 					<Grid item xs={12} md={4}>
 						<Stack spacing={1}>
 							<Box textAlign='center'>
-								<MailOutlineIcon color='primary' sx={{fontSize: 64}}/>
+								<MailOutlineIcon color='primary' sx={{ fontSize: 64 }} />
 							</Box>
 							<Typography color='primary' variant='h5' textAlign='center'>
 								Email
@@ -57,7 +57,7 @@ export default function Contact() {
 					<Grid item xs={12} md={4}>
 						<Stack spacing={1}>
 							<Box textAlign='center'>
-								<ThumbUpOffAltIcon color='primary' sx={{fontSize: 64}}/>
+								<ThumbUpOffAltIcon color='primary' sx={{ fontSize: 64 }} />
 							</Box>
 							<Typography color='primary' variant='h5' textAlign='center'>
 								Social
@@ -70,21 +70,21 @@ export default function Contact() {
 								<Grid item xs={4}>
 									<a href='https://www.facebook.com/cybervt/' target='_blank' rel='noreferrer'>
 										<IconButton color='primary'>
-											<FacebookIcon sx={{fontSize: 64}}/>
+											<FacebookIcon sx={{ fontSize: 64 }} />
 										</IconButton>
 									</a>
 								</Grid>
 								<Grid item xs={4}>
 									<a href='https://www.instagram.com/cybervt/' target='_blank' rel='noreferrer'>
 										<IconButton color='primary'>
-											<InstagramIcon sx={{fontSize: 64}}/>
+											<InstagramIcon sx={{ fontSize: 64 }} />
 										</IconButton>
 									</a>
 								</Grid>
 								<Grid item xs={4}>
 									<a href='https://www.github.com/cybervt/' target='_blank' rel='noreferrer'>
 										<IconButton color='primary'>
-											<GitHubIcon sx={{fontSize: 64}}/>
+											<GitHubIcon sx={{ fontSize: 64 }} />
 										</IconButton>
 									</a>
 								</Grid>
@@ -107,5 +107,5 @@ export default function Contact() {
 }
 
 export async function getStaticProps() {
-	return {props: siteNavigation.contact};
+	return { props: siteNavigation.contact };
 }
