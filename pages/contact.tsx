@@ -46,7 +46,7 @@ export default function Contact() {
 								Email
 							</Typography>
 							<Typography textAlign='justify'>
-								You can contact the officers of CyberVT by sending an email to <Link href={'mailto:' + myEmail}>{myEmail}</Link>. You can also subscribe to our <Link href='https://groups.google.com/a/vt.edu/g/cybersecurity-g'>mailing list</Link> to stay informed.
+								You can contact the officers of CyberVT by sending an email to <Link href={'mailto:' + myEmail}>{myEmail}</Link>. You can also subscribe to our <Link href='https://groups.google.com/u/1/a/vt.edu/g/cybersecurity-g'>mailing list</Link> to stay informed.
 							</Typography>
 
 							<Link href={'mailto:' + myEmail}>
