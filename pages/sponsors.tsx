@@ -149,9 +149,10 @@ export default function Sponsors() {
 					))}
 				</Grid>
 			</span>
-			<Typography variant='h4'>Recruiting</Typography>
+
+			<Typography variant='h4'>Detailed Sponsorship Information</Typography>
 			<Typography>
-				We welcome corporate representatives to give technical talks or workshops at our meetings on the condition that there is no recruiting. That said, we do offer sponsorship tiers that allow recruiting at the end of technical talks.
+				For more information regarding sponsoring CyberVT, please consult our <MuiLink href='/docs/cybervt-sponsorship-packet-v1.pdf' target='_blank' rel='noreferrer'>sponsorship packet</MuiLink>.
 			</Typography>
 
 			{ /* If there are no sponsors, don't show the sponsors section */}
