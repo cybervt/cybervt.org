@@ -19,7 +19,7 @@ const currentExec: CyberVtExec[] = [
 		name: 'Connor Bluestein',
 		position: 'President',
 		img: '/img/exec/cbluestein.jpg',
-		bio: 'Connor Bluestein is a junior in CMDA Cybersecurity and Cryptography. Since high school, he\'s been intrigued by cybersecurity. He previously led the Data Analysis Team, mastering tools like Splunk and Wireshark. He\'s competed in events like the NSA Cyber Exercise and SummitCTF. Connor aspires to work in federal cybersecurity, focusing on data analysis and offensive security. In the club, he aims to expand teams, launch certification programs, and spotlight members for sponsors. Beyond cybersecurity, he loves hiking, gym sessions, and pickleball.',
+		bio: 'Connor Bluestein is a senior in CMDA Cybersecurity and Cryptography. Since high school, he\'s been intrigued by cybersecurity. He previously led the Data Analysis Team, mastering tools like Splunk and Wireshark. He\'s competed in events like the NSA Cyber Exercise and SummitCTF. Connor aspires to work in federal cybersecurity, focusing on data analysis and offensive security. In the club, he aims to expand teams, launch certification programs, and spotlight members for sponsors. Beyond cybersecurity, he loves hiking, gym sessions, and pickleball.',
 	},
 	{
 		name: 'Miles Zoellner',
