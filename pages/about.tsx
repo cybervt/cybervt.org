@@ -16,22 +16,22 @@ type CyberVtExec = {
 
 const currentExec: CyberVtExec[] = [
 	{
-		name: 'Thomas Rydzewski',
-		position: 'President',
-		img: '/img/exec/avatar.jpg',
-		bio: 'Thomas Rydzewski is graduating in May 2024 with a B.S. Computer Science from Virginia Tech. He has worked in the government space and perseus a wide variety of interests.',
-	},
-	{
 		name: 'Connor Bluestein',
-		position: 'Vice President',
+		position: 'President',
 		img: '/img/exec/cbluestein.jpg',
 		bio: 'Connor Bluestein is a junior in CMDA Cybersecurity and Cryptography. Since high school, he\'s been intrigued by cybersecurity. He previously led the Data Analysis Team, mastering tools like Splunk and Wireshark. He\'s competed in events like the NSA Cyber Exercise and SummitCTF. Connor aspires to work in federal cybersecurity, focusing on data analysis and offensive security. In the club, he aims to expand teams, launch certification programs, and spotlight members for sponsors. Beyond cybersecurity, he loves hiking, gym sessions, and pickleball.',
 	},
 	{
-		name: 'Erin Freck',
+		name: 'Miles Zoellner',
+		position: 'Vice President',
+		img: '/img/exec/miles.png',
+		bio: 'Miles Zoellner is a junior studying Secure Computing with a minor in Chinese Studies. He has been interested in cybersecurity since his junior year in high school, deciding to pursue it as a discipline at Virginia Tech. He has previously been the Malware Team lead, as well as the SummitCTF chairman. He likes spending his free time wasting it on the computer.',
+	},
+	{
+		name: 'Daniel Hollberg',
 		position: 'Treasurer',
-		img: '/img/exec/efreck.jpg',
-		bio: 'Erin Freck graduated in May 2023 with a B.S. Computer Engineering from Virginia Tech and is now pursuing a M.S. Computer Science.  She has worked with Google on their blue team and is now pursing an interest in reverse engineering and forensics.',
+		img: '/img/exec/daniel.png',
+		bio: 'Daniel Hollberg is graduating in May 2026 with a B.S. in Secure Computing from Virginia Tech. As the treasurer of CyberVT, Daniel is committed to expanding the social outreach of the club, fostering collaboration with other Virginia Tech organizations, and strengthening relationships with current donors. He is passionate about cybersecurity and looks forward to continuing to contribute to the growth and success of the club.',
 	},
 ];
 
