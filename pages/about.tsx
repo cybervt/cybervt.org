@@ -30,7 +30,7 @@ const currentExec: CyberVtExec[] = [
 	{
 		name: 'Daniel Hollberg',
 		position: 'Treasurer',
-		img: '/img/exec/daniel.png',
+		img: '/img/exec/daniel.jpg',
 		bio: 'Daniel Hollberg is graduating in May 2026 with a B.S. in Secure Computing from Virginia Tech. As the treasurer of CyberVT, Daniel is committed to expanding the social outreach of the club, fostering collaboration with other Virginia Tech organizations, and strengthening relationships with current donors. He is passionate about cybersecurity and looks forward to continuing to contribute to the growth and success of the club.',
 	},
 ];
