@@ -38,6 +38,7 @@ export default function PageHeader(props: PageProps) {
 				<title>{pageTitle}</title>
 				<meta name='description' content={props.description} />
 				<link rel="manifest" href="/manifest.json" />
+				<link rel="icon" type="image/png" href="/favicon.png" />
 			</Head>
 			{props.showHeader && header}
 		</div>
