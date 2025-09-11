@@ -90,6 +90,6 @@ export async function getStaticProps() {
     });
 
     // Merge props for layout header
-    return { props: { ...siteNavigation.newsletter, grouped } };
+    return { props: { ...siteNavigation.resources.children?.newsletter ?? {}, grouped } };
 
 }

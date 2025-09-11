@@ -55,7 +55,14 @@ export default function BaseLayout({ children }: LayoutProps) {
 			<globalContext.Provider
 				value={globalProviderObject}
 			>
-				<Box display='flex' flexDirection='column' minHeight='100vh'>
+				<Box
+					display='flex'
+					flexDirection='column'
+					minHeight='100vh'
+					sx={{
+						background: (theme) => theme.palette.background.default,
+					}}
+				>
 					<NavigationBar />
 
 					<PageHeader {...pageProps} />

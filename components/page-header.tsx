@@ -1,14 +1,14 @@
 import React from 'react';
-import {Box, Stack, Typography} from '@mui/material';
+import { Box, Stack, Typography } from '@mui/material';
 import Head from 'next/head';
-import {PageProps} from '../src/config';
+import { PageProps } from '../src/config';
 
 export default function PageHeader(props: PageProps) {
 	const header = (
-		<Box textAlign='center' p={6} fontWeight='bold' bgcolor='primary.main'>
+		<Box textAlign='center' p={6} fontWeight='bold' bgcolor='secondary.main'>
 			<Stack spacing={2}>
-				<Typography color='primary.contrastText' variant='h3' fontFamily='monospace'>$ ./{props.title?.toLowerCase()}</Typography>
-				<Typography color='primary.contrastText' fontFamily='monospace'>{props.description}</Typography>
+				<Typography color='text.primary' variant='h3' fontFamily='monospace'>$ ./{props.title?.toLowerCase()}</Typography>
+				<Typography color='text.primary' fontFamily='monospace'>{props.description}</Typography>
 			</Stack>
 		</Box>
 	);
@@ -19,7 +19,7 @@ export default function PageHeader(props: PageProps) {
 		<div>
 			<Head>
 				<title>{pageTitle}</title>
-				<meta name='description' content={props.description}/>
+				<meta name='description' content={props.description} />
 			</Head>
 			{props.showHeader && header}
 		</div>

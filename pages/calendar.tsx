@@ -22,5 +22,5 @@ export default function Events() {
 }
 
 export async function getStaticProps() {
-	return { props: siteNavigation.calendar };
+	return { props: siteNavigation.events.children?.calendar ?? {} };
 }
