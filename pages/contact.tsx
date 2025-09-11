@@ -7,18 +7,17 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import React from 'react';
 
-import { red } from '@mui/material/colors';
 import { PageProps, discordUrl, siteNavigation } from '../src/config';
 
 export default function Contact() {
 	const myEmail = 'officers@cybervt.org';
 	return (
 		<Stack spacing={2}>
-			<Typography variant='body1'>
+			<Typography variant='body1' color="text.secondary">
 				There are many ways to stay in touch with the club, whether that be connecting with club leadership, or staying informed about club events.
 			</Typography>
 
-			<Box>
+			<Box color="text.primary">
 				<Grid container spacing={4}>
 					<Grid item xs={12} md={4}>
 						<Box sx={{ border: 1, borderColor: 'text', borderRadius: 2, p: 3, bgcolor: 'secondary.main', height: '100%' }}>

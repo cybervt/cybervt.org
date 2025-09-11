@@ -32,24 +32,26 @@ export function MobileAppBar() {
 	};
 
 	return (
-		<AppBar position="static" sx={{ padding: 2 }}>
-			<Toolbar>
+		<AppBar position="static" sx={{ p: 0, minHeight: 44 }}>
+			<Toolbar sx={{ minHeight: 44, px: 1 }}>
 				<Box flexGrow={1}>
 					<IconButton
 						color="inherit"
 						aria-label="Menu"
 						onClick={toggleNavigationBarOpen}
+						size="small"
+						sx={{ p: 0.5 }}
 					>
-						<MenuIcon />
+						<MenuIcon fontSize="small" />
 					</IconButton>
-					{siteTitle.toLowerCase()}
+					<span style={{ fontSize: '1rem', verticalAlign: 'middle' }}>{siteTitle.toLowerCase()}</span>
 				</Box>
 			</Toolbar>
 			<Collapse unmountOnExit in={isOpen} timeout="auto">
-				<List component="nav">
+				<List component="nav" sx={{ py: 0 }}>
 					<ListItem key="/" style={{ cursor: 'not-allowed' }}>
 						<Link href="/" style={{ color: 'white', textDecoration: 'none' }}>
-							<Button color="inherit">home</Button>
+							<Button color="inherit" size="small" sx={{ minHeight: 32, fontSize: '0.95rem' }}>home</Button>
 						</Link>
 					</ListItem>
 					{Object.entries(siteNavigation)
@@ -73,8 +75,9 @@ export function MobileAppBar() {
 													>
 														<Button
 															color="inherit"
-															sx={{ textTransform: 'none' }}
-															startIcon={childKey === 'instagram' ? <InstagramIcon /> : undefined}
+															size="small"
+															sx={{ textTransform: 'none', minHeight: 32, fontSize: '0.95rem' }}
+															startIcon={childKey === 'instagram' ? <InstagramIcon fontSize="small" /> : undefined}
 														>
 															{child.title.toLowerCase()}
 														</Button>
@@ -90,7 +93,7 @@ export function MobileAppBar() {
 											style={{ color: 'white', textDecoration: 'none' }}
 											{...(item.externalLink && { target: '_blank', rel: 'noopener noreferrer' })}
 										>
-											<Button color="inherit" sx={{ textTransform: 'none' }}>
+											<Button color="inherit" size="small" sx={{ textTransform: 'none', minHeight: 32, fontSize: '0.95rem' }}>
 												{item.title.toLowerCase()}
 											</Button>
 										</Link>
@@ -120,15 +123,15 @@ function DesktopAppBar() {
 	};
 
 	return (
-		<AppBar position="static" sx={{ padding: 2 }}>
-			<Toolbar>
+		<AppBar position="static" sx={{ p: 0.5, minHeight: 48 }}>
+			<Toolbar sx={{ minHeight: 48, px: 2 }}>
 				<Box flexGrow={1}>
 					<Link style={{ color: 'white', textDecoration: 'none' }} href="/">
-						<Image src="/img/logo.png" alt="CyberVT" width={150} height={62} style={{ verticalAlign: 'middle' }} />
+						<Image src="/img/logo.png" alt="CyberVT" width={110} height={45} style={{ verticalAlign: 'middle' }} />
 					</Link>
 				</Box>
 				<Box>
-					<Stack direction="row" spacing={2}>
+					<Stack direction="row" spacing={1.2}>
 						{Object.entries(siteNavigation)
 							.filter(([_, item]) => item.showInNav)
 							.map(([key, item]) => (
@@ -136,7 +139,8 @@ function DesktopAppBar() {
 									<div key={key}>
 										<Button
 											color="inherit"
-											sx={{ textTransform: 'none', color: 'text.primary' }} // Set text color to text.primary
+											size="small"
+											sx={{ textTransform: 'none', color: 'text.primary', minHeight: 36, fontSize: '0.8rem', px: 1.2 }}
 											onClick={(e) => handleMenuOpen(e, key)}
 											aria-haspopup="true"
 											aria-expanded={openMenu === key ? 'true' : undefined}
@@ -156,7 +160,7 @@ function DesktopAppBar() {
 													href={child.url}
 													{...(child.externalLink && { target: '_blank', rel: 'noopener noreferrer' })}
 													onClick={handleMenuClose}
-													sx={{ color: 'text.primary' }} // Set dropdown text color
+													sx={{ color: 'text.primary', fontSize: '0.97rem', minHeight: 32, px: 1.2 }}
 												>
 													{child.title.toLowerCase()}
 												</MenuItem>
@@ -172,7 +176,8 @@ function DesktopAppBar() {
 									>
 										<Button
 											color="inherit"
-											sx={{ textTransform: 'none', color: 'text.primary' }} // Set text color to text.primary
+											size="small"
+											sx={{ textTransform: 'none', color: 'text.primary', minHeight: 36, fontSize: '0.97rem', px: 1.2 }}
 											variant="text"
 										>
 											{item.title.toLowerCase()}
@@ -183,7 +188,8 @@ function DesktopAppBar() {
 						<Link href="/" style={{ color: 'white', textDecoration: 'none' }}>
 							<Button
 								color="inherit"
-								sx={{ textTransform: 'none' }}
+								size="small"
+								sx={{ textTransform: 'none', minHeight: 36, fontSize: '0.7rem', px: 1.2 }}
 								variant="outlined"
 							>
 								home

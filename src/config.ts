@@ -3,7 +3,7 @@
 import process from 'process';
 import {GraphQLClient} from 'graphql-request';
 import React from 'react';
-import {createTheme, Theme} from '@mui/material';
+import {createTheme, Theme, responsiveFontSizes} from '@mui/material';
 
 
 
@@ -18,7 +18,7 @@ export type GlobalVars = {
 export const discordUrl = 'https://discord.gg/ghgpNdCctT';
 
 /** Create theme */
-export const cybervtTheme = createTheme({
+let theme = createTheme({
 	components: {
 		// eslint-disable-next-line @typescript-eslint/naming-convention
 		MuiLink: {
@@ -30,7 +30,18 @@ export const cybervtTheme = createTheme({
 			},
 		},
 	},
-	palette: {
+	   typography: {
+		   body1: {
+			   fontSize: '10px',
+			   '@media (min-width:600px)': {
+				   fontSize: '11px',
+			   },
+			   '@media (min-width:900px)': {
+				   fontSize: '13px',
+			   },
+		   },
+	   },
+	   palette: {
 		mode: 'light',
 		primary: {
 			main: 'rgba(141, 0, 0, 1)',
@@ -50,6 +61,10 @@ export const cybervtTheme = createTheme({
         },
 	},
 });
+
+theme = responsiveFontSizes(theme);
+
+export const cybervtTheme = theme;
 
 export const maxMobileSize = 900;
 

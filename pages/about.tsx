@@ -144,15 +144,25 @@ export default function About() {
 				<Grid container spacing={8}>
 					{currentExec.map(element => (
 						<Grid key={element.name} item xs={12} md={4}>
-							<Stack spacing={0}>
-								<Image
-									alt={'Photo of ' + element.name}
-									width="0"
-									height="0"
-									sizes="100vw"
-									src={element.img}
-									style={{ width: '100%', height: 'auto', maxWidth: 300, objectFit: 'cover', alignSelf: 'center' }}
-								/>
+							<Stack spacing={0} alignItems="center">
+								<Box
+									sx={{
+										width: '100%',
+										maxWidth: 250,
+										'@media (max-width:600px)': {
+											maxWidth: 150,
+										},
+									}}
+								>
+									<Image
+										alt={'Photo of ' + element.name}
+										width={300}
+										height={300}
+										sizes="(max-width: 600px) 180px, 300px"
+										src={element.img}
+										style={{ width: '100%', height: 'auto', objectFit: 'cover', display: 'block', margin: '0 auto' }}
+									/>
+								</Box>
 								<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.secondary'>
 									{element.name}
 								</Typography>

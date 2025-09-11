@@ -47,6 +47,7 @@ function PhotoWallCarousel() {
                 width: '100%',
                 maxWidth: 1470,
                 mx: 'auto',
+                p: 1,
                 overflow: 'hidden',
             }}
         >
@@ -67,8 +68,8 @@ function PhotoWallCarousel() {
                                 justifyContent: 'center',
                                 alignItems: 'center',
                                 gap: 2,
-                                flexWrap: 'nowrap', // Prevents wrapping to a new row
-                                height: 300, // Fixed height for the row
+                                flexWrap: 'nowrap',
+                                height: { xs: 160, sm: 220, md: 260, lg: 300 },
                                 overflow: 'hidden',
                             }}
                         >
@@ -76,8 +77,10 @@ function PhotoWallCarousel() {
                                 <Box
                                     key={src}
                                     sx={{
-                                        width: 480,
-                                        height: 330,
+                                        width: { xs: '32vw', sm: '28vw', md: '22vw', lg: 480 },
+                                        maxWidth: 480,
+                                        minWidth: 120,
+                                        height: '100%',
                                         overflow: 'hidden',
                                         borderRadius: 2,
                                         boxShadow: 2,

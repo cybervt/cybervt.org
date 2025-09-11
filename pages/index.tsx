@@ -32,25 +32,46 @@ export default function Index() {
 						position: 'relative',
 						width: '100%',
 						textAlign: 'center',
-						py: 6
+						py: 3
 					}}
 				>
 					<Typography
-						gutterBottom
 						variant='h2'
 						fontWeight='bold'
 						color='white'
-						fontSize={20}
 						sx={{
-							textShadow: '0 5px 40px rgba(0, 0, 0, 1)'
+							textShadow: '0 5px 20px rgba(0, 0, 0, 1)',
+							mb: -1 // reduce margin below ASCII art
 						}}
 					>
-						<pre>{asciiArt}</pre>
+						<pre
+							style={{
+								display: 'inline-block',
+								maxWidth: '100%',
+								fontSize: 'clamp(8px, 2vw, 14px)',
+								margin: 0,
+								whiteSpace: 'pre',
+								fontFamily: 'monospace',
+								lineHeight: 1.1,
+								overflow: 'hidden',
+							}}
+						>{asciiArt}</pre>
 					</Typography>
 					<Typography
 						color='white'
 						variant='h6'
 						fontWeight='bold'
+						sx={{
+							display: 'inline-block',
+							maxWidth: '100%',
+							fontSize: 'clamp(8px, 2vw, 14px)',
+							margin: 0,
+							mt: 0.5, // reduce top margin to bring closer to ASCII art
+							whiteSpace: 'pre',
+							fontFamily: 'monospace',
+							lineHeight: 1,
+							overflow: 'hidden',
+						}}
 					>
 						{siteNavigation.home.description}
 					</Typography>
@@ -60,31 +81,47 @@ export default function Index() {
 			<PhotoWallCarousel />
 
 			<Box
-				width='100%'
-				maxWidth='1600px'
-				p={8}
-				flexGrow={1}
-				sx={{ margin: '0 auto', mt: -3 }}
+				maxWidth={1400}
+				mx="auto"
+				p={1}
+				flexGrow={2}
+				sx={{ mt: 2 }}
 			>
-				<Grid container spacing={4} alignItems="stretch">
-					<Grid item xs={12} md={5}>
-						<Box sx={{ border: 1, borderColor: 'text', borderRadius: 2, p: 3, bgcolor: 'secondary.main', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+				<Grid container spacing={5} alignItems="stretch" justifyContent="center">
+					<Grid item xs={12} md={4} display="flex">
+						<Box sx={{ border: 1, borderColor: 'text', borderRadius: 2, p: 3, bgcolor: 'secondary.main', height: '100%', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
 							<Stack spacing={2}>
-								<Typography color="text.primary">
+								<Typography
+									color="text.primary"
+									sx={{
+										fontSize: {
+											xs: '12px', // small screens
+											sm: '14px', // >=600px
+											md: '16px', // >=900px
+										},
+									}}
+								>
 									The Cybersecurity Club at Virginia Tech (CyberVT) is a student organization at Virginia Tech focused on educating students, faculty, and the wider Blacksburg public on cybersecurity. CyberVT provides a unique opportunity for students to collaborate and network with other aspiring security professionals.
 								</Typography>
 								<MuiLink component={Link} href='/about' sx={{ color: 'text.primary' }}>
-									<Button variant='contained' sx={{ color: 'text.primary' }}>Learn More</Button>
+									<Button variant='contained' size="small" sx={{ color: 'text.primary', fontSize: 12, px: 2, py: 0.5 }}>Learn More</Button>
 								</MuiLink>
 							</Stack>
 						</Box>
 					</Grid>
-					<Grid item xs={12} md={7}>
-						<Box sx={{ border: 1, borderColor: 'text', borderRadius: 3, p: 5, bgcolor: 'secondary.main', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-							<Typography variant="h4" fontWeight={700} color="text.primary" gutterBottom align="center" mb={5}>
+					<Grid item xs={12} md={7} display="flex">
+						<Box sx={{ border: 1, borderColor: 'text', borderRadius: 3, p: 3, bgcolor: 'secondary.main', height: '100%', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', mb: { xs: 3, md: 0 } }}>
+							<Typography
+								variant="h5"
+								fontWeight={600}
+								color="text.primary"
+								gutterBottom
+								align="center"
+								mb={3}
+							>
 								How to Join CyberVT
 							</Typography>
-							<Grid container spacing={3}>
+							<Grid container spacing={2}>
 								<Grid item xs={12} md={4}>
 									<Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
 										<Box sx={{
@@ -99,7 +136,7 @@ export default function Index() {
 											href="/calendar"
 											variant="contained"
 											color="primary"
-											sx={{ mt: 1, textTransform: 'none', fontWeight: 600, color: 'text.primary', alignSelf: 'center' }}
+											sx={{ textTransform: 'none', fontWeight: 600, color: 'text.primary', alignSelf: 'center', fontSize: 12 }}
 										>
 											Meeting Times
 										</Button>
@@ -120,7 +157,7 @@ export default function Index() {
 											href={discordUrl}
 											target="_blank"
 											rel="noopener noreferrer"
-											sx={{ mt: 1, textTransform: 'none', fontWeight: 600, color: 'text.primary', alignSelf: 'center' }}
+											sx={{ textTransform: 'none', fontWeight: 600, color: 'text.primary', alignSelf: 'center', fontSize: 12 }}
 										>
 											Connect Now
 										</Button>
@@ -141,7 +178,7 @@ export default function Index() {
 											href="https://gobblerconnect.vt.edu/organization/cybervt"
 											target="_blank"
 											rel="noreferrer"
-											sx={{ mt: 1, textTransform: 'none', fontWeight: 600, color: 'text.primary', alignSelf: 'center' }}
+											sx={{ textTransform: 'none', fontWeight: 600, color: 'text.primary', alignSelf: 'center', fontSize: 12 }}
 										>
 											Become a Member
 										</Button>
@@ -154,9 +191,9 @@ export default function Index() {
 			</Box >
 
 			{/* Thank you message and sponsor carousel */}
-			<Box sx={{ mt: -3, mb: 2, textAlign: 'center' }}>
+			<Box sx={{ mt: 0, mb: 2, textAlign: 'center', p: 1 }}>
 				<Box sx={{ border: 1, borderColor: 'text', borderRadius: 2, p: 3, bgcolor: 'secondary.main', maxWidth: 1100, mx: 'auto', mb: 3 }}>
-					<Typography variant="h5" color="text.primary" gutterBottom>
+					<Typography variant="h6" color="text.primary" gutterBottom fontSize="17px">
 						We are deeply grateful to our sponsors for their generous support and commitment to CyberVT's mission. Without their support, our activities and learning opportunities would not be possible.
 					</Typography>
 					<Button
@@ -164,7 +201,7 @@ export default function Index() {
 						color="primary"
 						component={Link}
 						href="/sponsors"
-						sx={{ mt: 2, fontWeight: 800, color: 'text.primary' }}
+						sx={{ mt: 2, fontWeight: 800, color: 'text.primary', fontSize: "12px" }}
 					>
 						View All Sponsors
 					</Button>
@@ -173,14 +210,20 @@ export default function Index() {
 
 			</Box>
 
-			<Box sx={{ mt: 5, display: 'flex', justifyContent: 'center' }}>
+			<Box sx={{ display: 'flex', justifyContent: 'center' }}>
 				<Box sx={{ width: '100%', maxWidth: 1100 }}>
 					<Typography
-						variant="h4"
+						variant="h6"
 						fontWeight={700}
 						align="center"
 						gutterBottom
-						sx={{ fontFamily: 'monospace', letterSpacing: 1, mt: 3, mb: 5, color: 'text.secondary' }}
+						sx={{
+							fontFamily: 'monospace',
+							letterSpacing: 1,
+							mb: 5,
+							color: 'text.secondary',
+							fontSize: '25px'
+						}}
 					>
 						$   ./Frequently Asked Questions
 					</Typography>
