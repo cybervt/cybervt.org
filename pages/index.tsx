@@ -180,7 +180,7 @@ export default function Index() {
 						fontWeight={700}
 						align="center"
 						gutterBottom
-						sx={{ fontFamily: 'monospace', letterSpacing: 1, mt: 3, mb: 5 }}
+						sx={{ fontFamily: 'monospace', letterSpacing: 1, mt: 3, mb: 5, color: 'text.secondary' }}
 					>
 						$   ./Frequently Asked Questions
 					</Typography>
