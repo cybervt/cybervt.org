@@ -37,6 +37,7 @@ export default function PageHeader(props: PageProps) {
 			<Head>
 				<title>{pageTitle}</title>
 				<meta name='description' content={props.description} />
+				<link rel="manifest" href="/manifest.json" />
 			</Head>
 			{props.showHeader && header}
 		</div>
