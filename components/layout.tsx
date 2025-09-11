@@ -2,16 +2,16 @@
 import React from 'react';
 
 /* MUI imports */
-import {Box, CssBaseline, Typography} from '@mui/material';
-import {ThemeProvider, createTheme} from '@mui/material/styles';
+import { Box, CssBaseline, Typography } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 /* My imports */
-import {globalContext, siteNavigation, GlobalVars, cybervtTheme, PageProps, LayoutProps, maxMobileSize} from '../src/config';
-import {NavigationBar} from './navigation-bar';
+import { globalContext, siteNavigation, GlobalVars, cybervtTheme, PageProps, LayoutProps, maxMobileSize } from '../src/config';
+import { NavigationBar } from './navigation-bar';
 import Footer from './footer';
 import PageHeader from './page-header';
 
-export default function BaseLayout({children}: LayoutProps) {
+export default function BaseLayout({ children }: LayoutProps) {
 	/* Declare states */
 	const [windowInnerWidth, setWindowInnerWidth] = React.useState(1024);
 
@@ -19,7 +19,7 @@ export default function BaseLayout({children}: LayoutProps) {
 	const isDesktop = React.useMemo(() => windowInnerWidth > maxMobileSize, [windowInnerWidth]);
 
 	/* Create Memo for the global context */
-	const globalProviderObject = React.useMemo<GlobalVars>(() => ({isDesktop}), [isDesktop]);
+	const globalProviderObject = React.useMemo<GlobalVars>(() => ({ isDesktop }), [isDesktop]);
 
 	/* When the page is loaded, we can display everything */
 	const isLoaded = React.useMemo(
@@ -51,14 +51,21 @@ export default function BaseLayout({children}: LayoutProps) {
 	/* JSX */
 	return (
 		<ThemeProvider theme={cybervtTheme}>
-			<CssBaseline/>
+			<CssBaseline />
 			<globalContext.Provider
 				value={globalProviderObject}
 			>
-				<Box display='flex' flexDirection='column' minHeight='100vh'>
-					<NavigationBar/>
+				<Box
+					display='flex'
+					flexDirection='column'
+					minHeight='100vh'
+					sx={{
+						background: (theme) => theme.palette.background.default,
+					}}
+				>
+					<NavigationBar />
 
-					<PageHeader {...pageProps}/>
+					<PageHeader {...pageProps} />
 					{pageProps.padding ? (
 						<Box
 							width='100%'
@@ -66,7 +73,7 @@ export default function BaseLayout({children}: LayoutProps) {
 							maxWidth='lg'
 							p={8}
 							flexGrow={1}
-							sx={{margin: '0 auto'}}
+							sx={{ margin: '0 auto' }}
 						>
 							{children}
 						</Box>
@@ -75,15 +82,15 @@ export default function BaseLayout({children}: LayoutProps) {
 							width='100%'
 							height='100%'
 							flexGrow={1}
-							sx={{margin: '0 auto'}}
+							sx={{ margin: '0 auto' }}
 						>
 							{children}
 						</Box>
 					)}
 
 					{/* Make a sticky footer that is always at the bottom */}
-					<Box sx={{width: '100%'}}>
-						<Footer/>
+					<Box sx={{ width: '100%' }}>
+						<Footer />
 					</Box>
 				</Box>
 			</globalContext.Provider>

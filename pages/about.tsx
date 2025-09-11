@@ -16,28 +16,89 @@ type CyberVtExec = {
 
 const currentExec: CyberVtExec[] = [
 	{
-		name: 'Connor Bluestein',
-		position: 'President',
-		img: '/img/exec/cbluestein.jpg',
-		bio: 'Connor Bluestein is a senior in CMDA Cybersecurity and Cryptography. Since high school, he\'s been intrigued by cybersecurity. He previously led the Data Analysis Team, mastering tools like Splunk and Wireshark. He\'s competed in events like the NSA Cyber Exercise and SummitCTF. Connor aspires to work in federal cybersecurity, focusing on data analysis and offensive security. In the club, he aims to expand teams, launch certification programs, and spotlight members for sponsors. Beyond cybersecurity, he loves hiking, gym sessions, and pickleball.',
-	},
-	{
-		name: 'Miles Zoellner',
-		position: 'Vice President',
-		img: '/img/exec/miles.png',
-		bio: 'Miles Zoellner is a junior studying Secure Computing with a minor in Chinese Studies. He has been interested in cybersecurity since his junior year in high school, deciding to pursue it as a discipline at Virginia Tech. He has previously been the Malware Team lead, as well as the SummitCTF chairman. He likes spending his free time wasting it on the computer.',
-	},
-	{
 		name: 'Daniel Hollberg',
-		position: 'Treasurer',
-		img: '/img/exec/daniel.jpg',
-		bio: 'Daniel Hollberg is graduating in May 2026 with a B.S. in Secure Computing from Virginia Tech. As the treasurer of CyberVT, Daniel is committed to expanding the social outreach of the club, fostering collaboration with other Virginia Tech organizations, and strengthening relationships with current donors. He is passionate about cybersecurity and looks forward to continuing to contribute to the growth and success of the club.',
+		position: 'President',
+		img: '/img/exec/daniel.jpeg',
+		bio: "Daniel is a Secure Computing major at Virginia Tech, graduating in May 2026. As President of CyberVT, Daniel leads the club's strategic vision to establish CyberVT as a leading center for cybersecurity education and professional development. Daniel has previously served as the club's Treasurer (AY 2024-2025) and as the Software Development Team Lead (AY 2023-2024). He brings extensive experience from his professional roles in industry and undergraduate research with VTNSI. His technical expertise spans AI/ML applications in cybersecurity, data analysis, software development, and cybersecurity training. Daniel is dedicated to fostering leadership development and building a collaborative community where members of all skill levels can advance their cybersecurity expertise. Beyond cybersecurity, Daniel enjoys hiking and cooking.",
 	},
+	{
+		name: 'Marissa Muñoz',
+		position: 'Vice President',
+		img: '/img/exec/marissa.jpeg',
+		bio: "Marissa is a Secure Computing major at Virginia Tech, graduating in May 2027, with minors in Leadership and Spanish. As Vice President of CyberVT, Marissa manages sponsor relations, oversees the club's mentorship program, and leads initiatives that connect students with professional development opportunities. Outside of academics and club responsibilities, Marissa is part of the Virginia Tech Corps of Cadets and enjoys traveling and playing volleyball.",
+	},
+	{
+		name: 'Mark Shelton',
+		position: 'Operations Officer',
+		img: '/img/exec/mark.jpeg',
+		bio: "Mark is a graduate student in his final year in the College of Engineering, pursuing a master\'s degree in Computer Science. As the Club's first Operations Officer, he aims to support the leadership team by coordinating operational tasks and ensuring everything runs smoothly.Outside of academics and club responsibilities, Mark enjoys golf, tennis, reading, improving existing skills and exploring new ones.",
+	},
+	{
+		name: 'Thomas Craycroft',
+		position: 'CTF Team Lead',
+		img: '/img/exec/thomas.jpeg',
+		bio: "Thomas is a Secure Computing major in his junior year of school at Virginia Tech. As CTF Team Lead, Thomas leads the weekly CTF meetings, schedules competitions and sets up the teams for those competitions. Outside of academics, Thomas enjoys rock climbing, hiking, cryptography, and going to the gym.",
+	},
+	{
+		name: 'Lake Gohlke',
+		position: 'Attack/Defense Team Lead',
+		img: '/img/exec/lake.jpeg',
+		bio: "Lake is a senior pursuing a major in Computer Science and a minor in Cybersecurity. As the Attack/Defense team lead, Lake leads the weekly Attack/Defense meeting, acts as the team captain for competitions like CCDC, DoE's Cyberforce, and RIT's ISTS. He also maintains a Proxmox virtual environment for club members to practice their technical skills leading up to competitions. In his free time, Lake enjoys golfing, mountain biking, going to the gym, and cooking.",
+	},
+	{
+		name: 'Imran Hussein',
+		position: 'Treasurer',
+		img: '/img/exec/imran.jpeg',
+		bio: "Imran is a senior at Virginia Tech studying Computer Science with a focus in Secure Computing. As the treasurer, Imran aims to utilize the club's financial resources to maximize opportunities for members in various ways, such as unlocking access to useful learning resources and sponsoring members to attend conferences and competitions across the country. In his free time, Imran enjoys going to the gym, working on cyber projects, and playing video games.",
+
+	},
+	{
+		name: 'Jessica Vinh',
+		position: 'Outreach Chair',
+		img: '/img/exec/jessica.jpeg',
+		bio: "Jessica is a Computer Science major at Virginia Tech with a minor in Human-Computer Interaction, graduating in May 2027. As the Outreach Chair for CyberVT, she furthers the clubs reach by contacting and facilitating collaboration between the departments and clubs at Virginia Tech, as well as fostering connections beyond the campus. Outside of CyberVT she is a member of the Corps of Cadets on track to commission in the Air Force and a Hokie ambassador for the college.  In her free time she enjoys spending time with friends and cafe hopping.",
+	},
+	{
+		name: 'Sean Pierce',
+		position: 'Social Media Manager',
+		img: '/img/exec/sean.jpeg',
+		bio: "Sean is a Cybersecurity and Data Analysis major at Virginia Tech and serves as the Social Media Chair for CyberVT. He manages the club's online presence by creating posts on Instagram to highlight meeting updates, upcoming events, and competition results. Sean joined CyberVT in Fall 2024 to strengthen his technical skills and expand his professional network in the cybersecurity field. Outside of academics and club involvement, he enjoys going to the gym, spending time with friends, and fishing.",
+	},
+	{
+		name: 'Sriram Agaram',
+		position: 'Events Coordinator',
+		img: '/img/exec/sriram.jpeg',
+		bio: "Sriram is a Secure Computing major at Virginia Tech graduating in 2028. As Events Coordinator Sriram plans different events for all club members. Sriram also works on the BCDC challenges along with Carson to teach and prepare freshman cybersecurity concepts to use at the National Security Agency\'s National Cyber.",
+	},
+	{
+		name: 'Sanjay Suresh Chander',
+		position: 'SummitCTF Chair',
+		img: '/img/exec/sanjay.jpeg',
+		bio: "Sanjay is a Computational Modeling and Data Analytics major at Virginia Tech, focusing on Cybersecurity and Cryptography, graduating in December 2027. As SummitCTF Chair, Sanjay focuses on the planning and execution of CyberVT's Summit CTF, a hybrid cybersecurity competition engaging with over 450 participants both virtually and on-site. In his free time, he likes to go to the gym, hang out outside with friends, and play soccer.",
+	},
+	{
+		name: 'Connor Bluestein',
+		position: 'Technical Director',
+		img: '/img/exec/connor.jpeg',
+		bio: "Connor is pursuing a Masters of Engineering degree in Computer Science and Applications with focus on Computer Security, graduating in May 2026. Connor has previously served as CyberVT's President (AY 2024-2025), Vice President (AY 2023-2024), and Data Analysis Team Lead (AY 2022-2023).",
+	},
+	{
+		name: 'Carson Townsend',
+		position: 'BCDC Team Lead',
+		img: '/img/exec/carson.jpeg',
+		bio: "Carson is a Cybersecurity Management and Analytics major at Virginia Tech planning to graduate in 2027. As the Cyber101 Coordinator, he is responsible for curating and maintaining the curriculum, ensuring that all members of CyberVT have a strong foundation to start out with, even if they don't have a technical background. In his free time, he enjoys recreational running, hanging out with his friends, and watching movies.",
+	},
+	{
+		name: 'Ishan Panchal',
+		position: 'NOVA Campus Liaison',
+		img: '/img/exec/default.jpg',
+		bio: " ",
+	}
 ];
 
 export default function About() {
 	return (
-		<Stack spacing={2}>
+		<Stack spacing={2} color={'text.secondary'}>
 			<Typography
 				variant='h4'
 			>
@@ -84,14 +145,21 @@ export default function About() {
 					{currentExec.map(element => (
 						<Grid key={element.name} item xs={12} md={4}>
 							<Stack spacing={0}>
-								<Image alt={'Photo of ' + element.name} width="0" height="0" sizes="100vw" src={element.img} style={{ width: '100%', height: 'auto' }} />
+								<Image
+									alt={'Photo of ' + element.name}
+									width="0"
+									height="0"
+									sizes="100vw"
+									src={element.img}
+									style={{ width: '100%', height: 'auto', maxWidth: 300, objectFit: 'cover', alignSelf: 'center' }}
+								/>
 								<Typography variant='h5' fontWeight='bold' textAlign='center' color='text.secondary'>
 									{element.name}
 								</Typography>
-								<Typography textAlign='center' color='text.secondary'>
+								<Typography textAlign='center' color='text.secondary '>
 									{element.position}
 								</Typography>
-								<Typography textAlign='justify'>
+								<Typography textAlign='justify' color='text.secondary'>
 									{element.bio}
 								</Typography>
 							</Stack>
