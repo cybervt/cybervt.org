@@ -44,11 +44,11 @@ let theme = createTheme({
 	   palette: {
 		mode: 'light',
 		primary: {
-			main: 'rgba(141, 0, 0, 1)',
+			main: 'rgba(135, 32, 65, 1)',
 			contrastText: '#e75553ff',
 		},
 		secondary: {
-			main: 'rgba(18, 74, 142, 1)',
+			main: 'rgba(27, 59, 114, 1)',
 			contrastText: 'rgba(4, 44, 93, 1)',
 		},
 		text: {
