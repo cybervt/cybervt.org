@@ -10,7 +10,7 @@ import React from 'react';
 import { PageProps, discordUrl, siteNavigation } from '../src/config';
 
 export default function Contact() {
-	const myEmail = 'officers@cybervt.org';
+	const myEmail = 'cyberclub@vt.edu';
 	return (
 		<Stack spacing={2}>
 			<Typography variant='body1' color="text.secondary">
