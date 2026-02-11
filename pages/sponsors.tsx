@@ -53,6 +53,14 @@ const sponsors: Sponsor[] = [
 		lastDonation: new Date('2025-10-25'),
 	},
 	{
+		name: 'DoD Senior Military College Cyber Institute (SMCCI)',
+		url: 'https://hume.vt.edu/undergraduate-education/workforce-development-programs/smc.html',
+		sponsorType: 'Diamond',
+		description: 'The Department of Defense Senior Military College Cyber Institute (SMCCI) aims to inspire and mentor undergraduate students interested in pursuing cyber-related careers with the Department of Defense (DoD) either as civilians or uniformed service members.',
+		logoLocation: '/img/sponsors/smcci.png',
+		lastDonation: new Date('2026-02-11'),
+	},
+	{
 		name: 'Northrop Grumman',
 		url: 'https://www.northropgrumman.com/',
 		sponsorType: 'Diamond',
