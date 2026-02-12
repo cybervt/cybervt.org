@@ -71,7 +71,7 @@ const sponsors: Sponsor[] = [
 	{
 		name: 'HII',
 		url: 'https://hii.com',
-		sponsorType: 'Silver',
+		sponsorType: 'Gold',
 		description: 'HII is a global engineering and defense technologies provider, and recognized worldwide as America’s largest shipbuilder.',
 		logoLocation: '/img/sponsors/hii.svg',
 		lastDonation: new Date('2025-10-21'),
