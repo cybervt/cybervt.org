@@ -11,7 +11,7 @@ const sponsorLogos = [
     //`${path}comptia.png`,
     //`${path}northropgrumman.png`,
     `${path}phantomsecurity.png`,
-    `${path}triplepointsecurity.png`
+    `${path}triplepointsecurity.png`,
     `${path}smcci.png`
 ];
 
