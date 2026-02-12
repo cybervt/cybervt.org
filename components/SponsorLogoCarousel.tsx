@@ -4,14 +4,15 @@ import Box from '@mui/material/Box';
 const path = '/img/sponsors/';
 // Define your sponsor logo file paths here
 const sponsorLogos = [
-    `${path}anteantech.png`,
+    //`${path}anteantech.png`,
     `${path}hii.svg`,
     `${path}percivaleng.png`,
-    `${path}tcmsecurity.png`,
-    `${path}comptia.png`,
-    `${path}northropgrumman.png`,
+    //`${path}tcmsecurity.png`,
+    //`${path}comptia.png`,
+    //`${path}northropgrumman.png`,
     `${path}phantomsecurity.png`,
     `${path}triplepointsecurity.png`
+    `${path}smcci.png`
 ];
 
 function chunkArray(arr: string[], size: number) {
