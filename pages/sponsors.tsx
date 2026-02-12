@@ -50,7 +50,7 @@ const sponsors: Sponsor[] = [
 		sponsorType: 'Diamond',
 		description: 'Triple Point Security is a cybersecurity company based in Leesburg, VA. They provide a variety of services to help clients protect their data and systems from cyber threats.',
 		logoLocation: '/img/sponsors/triplepointsecurity.png',
-		lastDonation: new Date('2025-10-25'),
+		lastDonation: new Date('2025-06-27'),
 	},
 	{
 		name: 'DoD Senior Military College Cyber Institute (SMCCI)',
@@ -66,7 +66,7 @@ const sponsors: Sponsor[] = [
 		sponsorType: 'Diamond',
 		description: 'Northrop Grumman is an American global aerospace and defense technology company. They provide various cybersecurity services to the government.',
 		logoLocation: '/img/sponsors/northropgrumman.png',
-		lastDonation: new Date('2025-11-30'),
+		lastDonation: new Date('2024-11-30'),
 	},
 	{
 		name: 'HII',
@@ -74,7 +74,7 @@ const sponsors: Sponsor[] = [
 		sponsorType: 'Silver',
 		description: 'HII is a global engineering and defense technologies provider, and recognized worldwide as America’s largest shipbuilder.',
 		logoLocation: '/img/sponsors/hii.svg',
-		lastDonation: new Date('2025-03-27'),
+		lastDonation: new Date('2025-10-21'),
 	},
 	{
 		name: 'Antean Technologies',
@@ -82,7 +82,7 @@ const sponsors: Sponsor[] = [
 		sponsorType: 'Silver',
 		description: 'Antean Technologies employes technology, engineering, and management solutions to help their clients strengthen cybersecurity postures, align digital strategy to the overall mission, and gain organizational efficiencies.',
 		logoLocation: '/img/sponsors/anteantech.png',
-		lastDonation: new Date('2025-09-09'),
+		lastDonation: new Date('2024-09-09'),
 	},
 	{
 		name: 'Percival Engineering',
@@ -98,7 +98,7 @@ const sponsors: Sponsor[] = [
 		sponsorType: 'Silver',
 		description: 'TCM Security helps companies secure their data, systems, and networks. They offer a variety of services, including penetration testing, vulnerability assessments, and security training.',
 		logoLocation: '/img/sponsors/tcmsecurity.png',
-		lastDonation: new Date('2025-09-09'),
+		lastDonation: new Date('2024-09-09'),
 	},
 	{
 		name: 'CompTIA',
@@ -106,7 +106,7 @@ const sponsors: Sponsor[] = [
 		sponsorType: 'Silver',
 		description: 'CompTIA is a leading provider of IT certifications and training. They offer a variety of certifications, including the Security+ certification.',
 		logoLocation: '/img/sponsors/comptia.png',
-		lastDonation: new Date('2025-09-09'),
+		lastDonation: new Date('2024-09-09'),
 	},
 	{
 		name: 'Phantom Security Group',
@@ -114,7 +114,7 @@ const sponsors: Sponsor[] = [
 		sponsorType: 'Bronze',
 		description: 'Phantom Security Group, a CyberVT Alumn Company, develops EvadeX, the ultimate Endpoint Detection and Response (EDR) evasion tool for automated and undetectable payload creation.',
 		logoLocation: '/img/sponsors/phantomsecurity.png',
-		lastDonation: new Date('2025-09-09'),
+		lastDonation: new Date('2025-04-01'),
 	},
 ].filter(sponsor => {
 	/* Filter sponsors that have donated in the last year */
