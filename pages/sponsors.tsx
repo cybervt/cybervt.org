@@ -87,7 +87,7 @@ const sponsors: Sponsor[] = [
 	{
 		name: 'Percival Engineering',
 		url: 'https://www.percivaleng.com/',
-		sponsorType: 'Silver',
+		sponsorType: 'Gold',
 		description: 'Percival Engineering develops cutting-edge engineering solutions to combat the most challenging cyber threats.',
 		logoLocation: '/img/sponsors/percivaleng.png',
 		lastDonation: new Date('2025-09-09'),
