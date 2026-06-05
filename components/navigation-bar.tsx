@@ -177,7 +177,7 @@ function DesktopAppBar() {
 										<Button
 											color="inherit"
 											size="small"
-											sx={{ textTransform: 'none', color: 'text.primary', minHeight: 36, fontSize: '0.97rem', px: 1.2 }}
+											sx={{ textTransform: 'none', color: 'text.primary', minHeight: 36, fontSize: '0.8rem', px: 1.2 }}
 											variant="text"
 										>
 											{item.title.toLowerCase()}
