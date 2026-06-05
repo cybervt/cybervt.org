@@ -9,15 +9,6 @@
     "zoomLink": null
   },
   {
-    "title": "Weekly Meeting - Binary Exploitation",
-    "date": "2026-06-10",
-    "time": "19:00",
-    "endTime": "21:00",
-    "location": "Torgersen 1100",
-    "description": "Hands-on binary exploitation workshop. We'll cover stack overflows, ROP chains, and how to use GDB effectively. Bring a laptop with a Linux VM or WSL set up.",
-    "zoomLink": null
-  },
-  {
     "title": "Beginner Meeting - Linux Fundamentals",
     "date": "2026-06-12",
     "time": "18:00",
@@ -25,15 +16,6 @@
     "location": "Torgersen 1100",
     "description": "Introduction to the Linux command line for cybersecurity. We'll cover file navigation, permissions, processes, and basic scripting. No prior experience needed.",
     "zoomLink": null
-  },
-  {
-    "title": "SummitCTF Planning Session",
-    "date": "2026-06-17",
-    "time": "19:00",
-    "endTime": "20:00",
-    "location": "Online",
-    "description": "Planning meeting for the upcoming SummitCTF competition. We'll discuss challenge categories, infrastructure, and volunteer assignments.",
-    "zoomLink": "https://virginiatech.zoom.us/j/123456789"
   },
   {
     "title": "Weekly Meeting - Web App Security",
@@ -52,15 +34,6 @@
     "location": "Torgersen 1100",
     "description": "Kickoff event for picoCTF! We'll form teams, go over the rules, and start solving challenges together. Pizza provided.",
     "zoomLink": null
-  },
-  {
-    "title": "Alumni Guest Speaker - Incident Response",
-    "date": "2026-07-08",
-    "time": "19:00",
-    "endTime": "20:30",
-    "location": "Torgersen 2150",
-    "description": "CyberVT alumna Jane Smith (now at CrowdStrike) shares real-world incident response stories and career advice for breaking into the IR field.",
-    "zoomLink": "https://virginiatech.zoom.us/j/987654321"
   },
   {
     "title": "Beginner Meeting - Cryptography Basics",
