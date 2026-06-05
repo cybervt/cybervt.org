@@ -202,34 +202,15 @@ export const siteNavigation: SiteNavigation = {
 			},
 		},
 	},
-	events: {
+	calendar: {
 		...defaultNavItem,
-		url: '#',
-		title: 'Events',
-		description: 'Explore our events',
+		url: '/calendar',
+		title: 'Calendar',
+		description: 'Upcoming events',
 		externalLink: false,
 		showInNav: true,
 		showHeader: true,
 		padding: true,
-		children: {
-			calendar: {
-				...defaultNavItem,
-				url: '/calendar',
-				title: 'Calendar',
-				description: 'Upcoming events',
-				externalLink: false,
-				showInNav: true,
-				showHeader: true,
-				padding: true,
-			},
-			// summitCTF: {
-			// 	...defaultNavItem,
-			// 	url: 'https://summitctf.org',
-			// 	externalLink: true,
-			// 	title: 'Summit CTF',
-			// 	description: 'CyberVT\'s Annual CTF',
-			// },
-		},
 	},
 	resources: {
 		...defaultNavItem,

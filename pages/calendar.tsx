@@ -41,7 +41,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      ...(siteNavigation.events.children?.calendar ?? {}),
+      ...(siteNavigation.calendar ?? {}),
       events,
     },
   };
