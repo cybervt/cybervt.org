@@ -4,5 +4,5 @@
 ## ToDo
 
 - [ ] Update Sponsor dates (talk w/ Marissa)
-- [ ] Update/Make new Calendar
+- [x] Update/Make new Calendar
 - [ ] Publish a schedule for Summit in advance 
