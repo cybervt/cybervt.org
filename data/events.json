@@ -1,5 +1,14 @@
 [
   {
+    "title": "Summer Leadership Sync",
+    "date": "2026-06-07",
+    "time": "19:45",
+    "endTime": "20:45",
+    "location": "Virtual",
+    "description": "Show of what we've accomplished this summer.",
+    "zoomLink": null
+  },
+  {
     "title": "Weekly Meeting - Binary Exploitation",
     "date": "2026-06-10",
     "time": "19:00",
