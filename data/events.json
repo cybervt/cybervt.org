@@ -7,41 +7,5 @@
     "location": "Virtual",
     "description": "Show of what we've accomplished this summer.",
     "zoomLink": null
-  },
-  {
-    "title": "Beginner Meeting - Linux Fundamentals",
-    "date": "2026-06-12",
-    "time": "18:00",
-    "endTime": "19:30",
-    "location": "Torgersen 1100",
-    "description": "Introduction to the Linux command line for cybersecurity. We'll cover file navigation, permissions, processes, and basic scripting. No prior experience needed.",
-    "zoomLink": null
-  },
-  {
-    "title": "Weekly Meeting - Web App Security",
-    "date": "2026-06-24",
-    "time": "19:00",
-    "endTime": "21:00",
-    "location": "Torgersen 1100",
-    "description": "Deep dive into web application security: SQL injection, XSS, CSRF, and modern defenses. Live demo of Burp Suite and OWASP ZAP.",
-    "zoomLink": null
-  },
-  {
-    "title": "CTF Competition - picoCTF Kickoff",
-    "date": "2026-07-01",
-    "time": "18:00",
-    "endTime": "22:00",
-    "location": "Torgersen 1100",
-    "description": "Kickoff event for picoCTF! We'll form teams, go over the rules, and start solving challenges together. Pizza provided.",
-    "zoomLink": null
-  },
-  {
-    "title": "Beginner Meeting - Cryptography Basics",
-    "date": "2026-07-10",
-    "time": "18:00",
-    "endTime": "19:30",
-    "location": "Torgersen 1100",
-    "description": "Introduction to cryptography: symmetric vs asymmetric encryption, hashing, and common CTF crypto challenges. Hands-on with CyberChef and Python.",
-    "zoomLink": null
   }
 ]
