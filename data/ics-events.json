@@ -1,118 +1,928 @@
 [
   {
-    "title": "FW: Hume Seminar Series: Emulation as a Force Multiplier for Cyber",
-    "date": "2026-03-24",
-    "time": "18:00",
-    "endTime": "19:00",
-    "location": "Zoom",
-    "description": "",
-    "zoomLink": null
-  },
-  {
-    "title": "[REQUIRED - VIRTUAL] CyberVT Leadership Transition Meeting",
-    "date": "2026-05-05",
-    "time": "17:00",
-    "endTime": "18:00",
-    "location": "Microsoft Teams Meeting",
-    "description": "",
-    "zoomLink": null
-  },
-  {
-    "title": "CyberVT Final Presentations - Spring 2026",
-    "date": "2026-05-07",
-    "time": "12:00",
-    "endTime": "13:00",
-    "location": "Microsoft Teams Meeting",
-    "description": "",
-    "zoomLink": null
-  },
-  {
-    "title": "Technical Director Role Sync",
-    "date": "2026-05-10",
-    "time": "20:30",
-    "endTime": "21:00",
-    "location": "Microsoft Teams Meeting",
-    "description": "",
-    "zoomLink": null
-  },
-  {
-    "title": "CyberVT Summer Leadership Sync",
-    "date": "2026-06-07",
-    "time": "19:45",
-    "endTime": "20:30",
-    "location": "Teams Meeting!",
-    "description": "",
-    "zoomLink": null
-  },
-  {
-    "title": "CyberVT Summer Leadership Sync",
+    "title": "Leadership Meetings",
     "date": "2026-06-14",
     "time": "19:45",
     "endTime": "20:30",
-    "location": "Teams Meeting!",
+    "location": "",
     "description": "",
     "zoomLink": null
   },
   {
-    "title": "CyberVT Summer Leadership Sync",
+    "title": "Attack/Defense",
+    "date": "2026-06-17",
+    "time": "20:00",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
     "date": "2026-06-21",
     "time": "19:45",
     "endTime": "20:30",
-    "location": "Teams Meeting!",
+    "location": "",
     "description": "",
     "zoomLink": null
   },
   {
-    "title": "CyberVT Summer Leadership Sync",
+    "title": "Attack/Defense",
+    "date": "2026-06-24",
+    "time": "20:00",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
     "date": "2026-06-28",
     "time": "19:45",
     "endTime": "20:30",
-    "location": "Teams Meeting!",
+    "location": "",
     "description": "",
     "zoomLink": null
   },
   {
-    "title": "CyberVT Summer Leadership Sync",
+    "title": "Attack/Defense",
+    "date": "2026-07-01",
+    "time": "20:00",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
     "date": "2026-07-05",
     "time": "19:45",
     "endTime": "20:30",
-    "location": "Teams Meeting!",
+    "location": "",
     "description": "",
     "zoomLink": null
   },
   {
-    "title": "CyberVT Summer Leadership Sync",
+    "title": "Leadership Meetings",
     "date": "2026-07-12",
     "time": "19:45",
     "endTime": "20:30",
-    "location": "Teams Meeting!",
+    "location": "",
     "description": "",
     "zoomLink": null
   },
   {
-    "title": "CyberVT Summer Leadership Sync",
+    "title": "Leadership Meetings",
     "date": "2026-07-19",
     "time": "19:45",
     "endTime": "20:30",
-    "location": "Teams Meeting!",
+    "location": "",
     "description": "",
     "zoomLink": null
   },
   {
-    "title": "CyberVT Summer Leadership Sync",
+    "title": "Leadership Meetings",
     "date": "2026-07-26",
     "time": "19:45",
     "endTime": "20:30",
-    "location": "Teams Meeting!",
+    "location": "",
     "description": "",
     "zoomLink": null
   },
   {
-    "title": "CyberVT Summer Leadership Sync",
+    "title": "Leadership Meetings",
     "date": "2026-08-02",
     "time": "19:45",
     "endTime": "20:30",
-    "location": "Teams Meeting!",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-08-09",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-08-16",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-08-23",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-08-30",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM",
+    "date": "2026-09-01",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM - Intro Meeting",
+    "date": "2026-09-01",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-09-02",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-09-03",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings - Intro Meeting",
+    "date": "2026-09-03",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-09-06",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Labor Day - No Events",
+    "date": "2026-09-07",
+    "time": "00:00",
+    "endTime": "00:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101",
+    "date": "2026-09-08",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101 - Setting Up VMs",
+    "date": "2026-09-08",
+    "time": "20:00",
+    "endTime": "21:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-09-09",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings - VT Cyber Range",
+    "date": "2026-09-09",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-09-10",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-09-13",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM",
+    "date": "2026-09-15",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Guest Speaker",
+    "date": "2026-09-15",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-09-16",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-09-17",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "VT Hacks",
+    "date": "2026-09-18",
+    "time": "00:00",
+    "endTime": "00:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-09-20",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101",
+    "date": "2026-09-22",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-09-23",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings - Password Cracking",
+    "date": "2026-09-23",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-09-24",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-09-27",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM",
+    "date": "2026-09-29",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-09-30",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-10-01",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-10-04",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101",
+    "date": "2026-10-06",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101 - Cryptography 101",
+    "date": "2026-10-06",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-10-07",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-10-08",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Fall Break - Events",
+    "date": "2026-10-09",
+    "time": "00:00",
+    "endTime": "00:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-10-11",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM",
+    "date": "2026-10-13",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-10-14",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-10-15",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-10-18",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101",
+    "date": "2026-10-20",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-10-21",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-10-22",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-10-25",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM",
+    "date": "2026-10-27",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-10-28",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-10-29",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-11-01",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101",
+    "date": "2026-11-03",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-11-04",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-11-05",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Guest Speaker: John Harrison Cybersecurity State Coordinator (Virgi",
+    "date": "2026-11-05",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-11-08",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM",
+    "date": "2026-11-10",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-11-11",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-11-12",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CyberForce Competition",
+    "date": "2026-11-13",
+    "time": "00:00",
+    "endTime": "00:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-11-15",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101",
+    "date": "2026-11-17",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-11-18",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-11-19",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Thanksgiving Break - No Events",
+    "date": "2026-11-21",
+    "time": "00:00",
+    "endTime": "00:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-11-22",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM",
+    "date": "2026-11-24",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-11-25",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-11-26",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-11-29",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101",
+    "date": "2026-12-01",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-12-02",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-12-03",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Leadership Meetings",
+    "date": "2026-12-06",
+    "time": "19:45",
+    "endTime": "20:30",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM",
+    "date": "2026-12-08",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-12-09",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-12-10",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Final Exams",
+    "date": "2026-12-11",
+    "time": "00:00",
+    "endTime": "00:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101",
+    "date": "2026-12-15",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-12-16",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-12-17",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM",
+    "date": "2026-12-22",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-12-23",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-12-24",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101",
+    "date": "2026-12-29",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2026-12-30",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2026-12-31",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "GBM",
+    "date": "2027-01-05",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2027-01-06",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2027-01-07",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Cyber101",
+    "date": "2027-01-12",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "CTF Meetings",
+    "date": "2027-01-13",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Attack/Defense Meetings",
+    "date": "2027-01-14",
+    "time": "18:00",
+    "endTime": "19:00",
+    "location": "",
     "description": "",
     "zoomLink": null
   }
