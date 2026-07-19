@@ -72,6 +72,10 @@ export default function Admin({ events: initialEvents }: AdminProps) {
   const [isSaving, setIsSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
 
+  // check-in code state
+  const [checkinCode, setCheckinCode] = useState('');
+  const [codeCopied, setCodeCopied] = useState(false);
+
   // load token from localStorage on mount
   useEffect(() => {
     const stored = localStorage.getItem('cybervt_gh_token');
@@ -204,6 +208,25 @@ export default function Admin({ events: initialEvents }: AdminProps) {
     localStorage.removeItem('cybervt_gh_token');
   }
 
+  // ── check-in code generator ──
+  function generateCheckinCode() {
+    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // no 0/O, 1/I/L
+    let code = '';
+    for (let i = 0; i < 6; i++) {
+      code += chars[Math.floor(Math.random() * chars.length)];
+    }
+    setCheckinCode(code);
+    setCodeCopied(false);
+  }
+
+  function copyCheckinCode() {
+    if (!checkinCode) return;
+    navigator.clipboard.writeText(checkinCode).then(() => {
+      setCodeCopied(true);
+      setTimeout(() => setCodeCopied(false), 2000);
+    }).catch(() => {});
+  }
+
   // ── render ──
   return (
     <Stack spacing={3} sx={{ maxWidth: 800, mx: 'auto', width: '100%' }}>
@@ -330,6 +353,81 @@ export default function Admin({ events: initialEvents }: AdminProps) {
           {saveStatus.message}
         </Alert>
       )}
+
+      {/* ── meeting check-in code ── */}
+      <Paper
+        elevation={0}
+        sx={{
+          border: '1px solid',
+          borderColor: 'divider',
+          borderRadius: 2,
+          bgcolor: 'secondary.main',
+          p: { xs: 2, md: 2.5 },
+        }}
+      >
+        <Stack spacing={1.5}>
+          <Typography fontFamily="monospace" fontWeight={600} color="text.primary" fontSize="0.9rem">
+            Meeting Check-in Code
+          </Typography>
+
+          <Typography sx={{ fontSize: '0.75rem', color: 'grey.400', fontFamily: 'monospace', lineHeight: 1.6 }}>
+            Generate a code before each meeting and display it on the projector.
+            Members enter it at <strong>cybervt.org/checkin</strong> to verify attendance. The
+            code acts as a filter key in the Google Sheet.
+          </Typography>
+
+          {checkinCode ? (
+            <Stack spacing={1.5}>
+              <Box
+                sx={{
+                  bgcolor: 'primary.main',
+                  borderRadius: 1.5,
+                  px: 3,
+                  py: 1.5,
+                  textAlign: 'center',
+                  border: '2px dashed',
+                  borderColor: 'rgba(255,255,255,0.25)',
+                }}
+              >
+                <Typography
+                  fontFamily="monospace"
+                  fontWeight={700}
+                  color="text.primary"
+                  sx={{ fontSize: { xs: '1.8rem', md: '2.5rem' }, letterSpacing: '0.3em', userSelect: 'all' }}
+                >
+                  {checkinCode}
+                </Typography>
+              </Box>
+              <Stack direction="row" spacing={1}>
+                <Button
+                  variant="contained"
+                  size="small"
+                  onClick={copyCheckinCode}
+                  sx={{ textTransform: 'none', fontFamily: 'monospace', fontSize: '0.75rem' }}
+                >
+                  {codeCopied ? 'Copied!' : 'Copy to Clipboard'}
+                </Button>
+                <Button
+                  variant="outlined"
+                  size="small"
+                  onClick={generateCheckinCode}
+                  sx={{ textTransform: 'none', fontFamily: 'monospace', fontSize: '0.75rem', color: 'grey.400', borderColor: 'grey.600' }}
+                >
+                  New Code
+                </Button>
+              </Stack>
+            </Stack>
+          ) : (
+            <Button
+              variant="contained"
+              onClick={generateCheckinCode}
+              sx={{ textTransform: 'none', fontFamily: 'monospace', fontSize: '0.8rem', alignSelf: 'flex-start' }}
+            >
+              Generate Code
+            </Button>
+          )}
+        </Stack>
+      </Paper>
 
       {/* ── add / edit form ── */}
       {showForm && (

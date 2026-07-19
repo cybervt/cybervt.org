@@ -1,0 +1,32 @@
+name: Sync Outlook Calendar
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:  # manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to push commits
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch and parse ICS
+        run: python3 scripts/sync-ics.py
+
+      - name: Commit changes
+        run: |
+          if [ -n "$(git status --porcelain data/ics-events.json)" ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email 'github-actions[bot]@users.noreply.github.com'
+            git add data/ics-events.json
+            git commit -m 'Sync calendar from Outlook ICS'
+            git push
+          else
+            echo "No changes to commit"
+          fi

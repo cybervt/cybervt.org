@@ -17,6 +17,10 @@ export type GlobalVars = {
 
 export const discordUrl = 'https://discord.gg/ghgpNdCctT';
 
+// Outlook calendar ICS feed — publish from Outlook Calendar → Settings → Shared Calendars
+// Replace with the club's actual ICS URL
+export const icsFeedUrl = 'https://outlook.office365.com/owa/calendar/5a29b31ecc7c441db13229bfc8841ea8@vt.edu/daf6c03f739f4204ad59ed36983ef3b312812579974649380229/calendar.ics';
+
 /** Create theme */
 let theme = createTheme({
 	components: {
@@ -258,6 +262,15 @@ export const siteNavigation: SiteNavigation = {
 		padding: true,
 		title: '404',
 		description: 'Segmentation fault (core dumped)',
+	},
+	checkin: {
+		url: '/checkin',
+		showInNav: false,
+		externalLink: false,
+		showHeader: true,
+		padding: true,
+		title: 'Check-in',
+		description: 'Verify your meeting attendance',
 	},
 };
 
