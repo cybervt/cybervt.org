@@ -135,7 +135,7 @@
     "zoomLink": null
   },
   {
-    "title": "GBM - Intro Meeting",
+    "title": "GBM",
     "date": "2026-09-01",
     "time": "18:00",
     "endTime": "19:00",
@@ -144,7 +144,7 @@
     "zoomLink": null
   },
   {
-    "title": "GBM",
+    "title": "GBM - Intro Meeting",
     "date": "2026-09-01",
     "time": "18:00",
     "endTime": "19:00",
@@ -162,7 +162,7 @@
     "zoomLink": null
   },
   {
-    "title": "Attack/Defense Meetings",
+    "title": "Attack/Defense Meetings - Intro Meeting",
     "date": "2026-09-03",
     "time": "18:00",
     "endTime": "19:00",
@@ -171,7 +171,7 @@
     "zoomLink": null
   },
   {
-    "title": "Attack/Defense Meetings - Intro Meeting",
+    "title": "Attack/Defense Meetings",
     "date": "2026-09-03",
     "time": "18:00",
     "endTime": "19:00",
@@ -225,6 +225,15 @@
     "zoomLink": null
   },
   {
+    "title": "Business Horizons",
+    "date": "2026-09-09",
+    "time": "10:00",
+    "endTime": "15:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
     "title": "CTF Meetings - VT Cyber Range",
     "date": "2026-09-09",
     "time": "18:00",
@@ -238,6 +247,15 @@
     "date": "2026-09-10",
     "time": "18:00",
     "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Business Horizons",
+    "date": "2026-09-10",
+    "time": "10:00",
+    "endTime": "15:00",
     "location": "",
     "description": "",
     "zoomLink": null
@@ -261,6 +279,15 @@
     "zoomLink": null
   },
   {
+    "title": "Engineer Expo",
+    "date": "2026-09-15",
+    "time": "10:00",
+    "endTime": "16:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
     "title": "Guest Speaker",
     "date": "2026-09-15",
     "time": "18:00",
@@ -279,10 +306,28 @@
     "zoomLink": null
   },
   {
+    "title": "Engineer Expo",
+    "date": "2026-09-16",
+    "time": "10:00",
+    "endTime": "16:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
     "title": "Attack/Defense Meetings",
     "date": "2026-09-17",
     "time": "18:00",
     "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Engineer Expo",
+    "date": "2026-09-17",
+    "time": "10:00",
+    "endTime": "16:00",
     "location": "",
     "description": "",
     "zoomLink": null
@@ -652,6 +697,15 @@
     "date": "2026-11-18",
     "time": "18:00",
     "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "Breakzone Tournament (Billiards)",
+    "date": "2026-11-18",
+    "time": "00:00",
+    "endTime": "00:00",
     "location": "",
     "description": "",
     "zoomLink": null
