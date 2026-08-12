@@ -102,15 +102,15 @@ const sponsors: Sponsor[] = [
 	},
 	{
 		name: 'Virginia Cyber Range',
-		URL: 'https://www.virginiacyberrange.org/',
+		url: 'https://www.virginiacyberrange.org/',
 		sponsorType: 'Bronze',
 		description: 'The Virginia Cyber Range is a Commonwealth of Virginia initiative with a mission to enhance cybersecurity education for students in the Commonwealth’s public high schools, colleges, and universities.',
-		logoLocation '/img/sponsors/CyberRange.svg',
+		logoLocation: '/img/sponsors/CyberRange.svg',
 		lastDonation: new Date('2026-08-01'),
 	},
 	{
 		name: 'MBL Technologies',
-		URL: 'https://mbltechnologies.com/',
+		url: 'https://mbltechnologies.com/',
 		sponsorType: 'Gold',
 		description: 'MBL Technologies is a veteran-owned small business that offers a diverse set of technology services to the federal, civillian, and commercial markets.',
 		logoLocation: '/img/sponsors/MBL_Technologies.png',
