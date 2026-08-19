@@ -175,7 +175,7 @@ export default function Index() {
 										<Button
 											variant="contained"
 											color="primary"
-											href="https://gobblerconnect.vt.edu/organization/cybervt"
+											href="https://gobblerconnect.vt.edu/feeds?type=club&type_id=35787&tab=about"
 											target="_blank"
 											rel="noreferrer"
 											sx={{ textTransform: 'none', fontWeight: 600, color: 'text.primary', alignSelf: 'center', fontSize: 12 }}

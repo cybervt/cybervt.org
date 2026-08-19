@@ -49,7 +49,7 @@ export default function ReadMe() {
                         <ListItem>
                             <ListItemText
                                 primary={
-                                    <MuiLink href="https://discord.gg/your-discord-link" target="_blank" rel="noopener noreferrer" underline="hover">
+                                    <MuiLink href="https://discord.gg/ghgpNdCctT" target="_blank" rel="noopener noreferrer" underline="hover">
                                         Join our Discord server
                                     </MuiLink>
                                 }
@@ -59,7 +59,7 @@ export default function ReadMe() {
                         <ListItem>
                             <ListItemText
                                 primary={
-                                    <MuiLink href="https://gobblerconnect.vt.edu/organization/cybervt" target="_blank" rel="noopener noreferrer" underline="hover">
+                                    <MuiLink href="https://gobblerconnect.vt.edu/feeds?type=club&type_id=35787&tab=about" target="_blank" rel="noopener noreferrer" underline="hover">
                                         Join the Cyber Security Club on GobblerConnect
                                     </MuiLink>
                                 }
@@ -263,5 +263,5 @@ export default function ReadMe() {
 }
 
 export async function getStaticProps() {
-    return { props: siteNavigation.resources.children?.ReadMe ?? {} };
+    return { props: siteNavigation.resources.children?.readme ?? {} };
 }

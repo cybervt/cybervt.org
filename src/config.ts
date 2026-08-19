@@ -229,7 +229,7 @@ export const siteNavigation: SiteNavigation = {
 			readme: {
 				...defaultNavItem,
 				url: '/readme',
-				title: 'README',
+				title: 'readme',
 				description: 'Resources for new members',
 				externalLink: false,
 				showInNav: true,
