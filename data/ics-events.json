@@ -135,7 +135,7 @@
     "zoomLink": null
   },
   {
-    "title": "GBM",
+    "title": "GBM - Intro Meeting",
     "date": "2026-09-01",
     "time": "18:00",
     "endTime": "19:00",
@@ -144,7 +144,7 @@
     "zoomLink": null
   },
   {
-    "title": "GBM - Intro Meeting",
+    "title": "GBM",
     "date": "2026-09-01",
     "time": "18:00",
     "endTime": "19:00",
@@ -162,7 +162,7 @@
     "zoomLink": null
   },
   {
-    "title": "Attack/Defense Meetings - Intro Meeting",
+    "title": "Attack/Defense Meetings",
     "date": "2026-09-03",
     "time": "18:00",
     "endTime": "19:00",
@@ -171,7 +171,7 @@
     "zoomLink": null
   },
   {
-    "title": "Attack/Defense Meetings",
+    "title": "Attack/Defense Meetings - Intro Meeting",
     "date": "2026-09-03",
     "time": "18:00",
     "endTime": "19:00",
@@ -418,6 +418,15 @@
     "date": "2026-10-01",
     "time": "18:00",
     "endTime": "19:00",
+    "location": "",
+    "description": "",
+    "zoomLink": null
+  },
+  {
+    "title": "TribeCTF 2026",
+    "date": "2026-10-03",
+    "time": "00:00",
+    "endTime": "00:00",
     "location": "",
     "description": "",
     "zoomLink": null
