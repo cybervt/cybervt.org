@@ -2,7 +2,7 @@ import { relative } from 'node:path';
 import React from 'react';
 import { Typography, Stack, Grid, Box } from '@mui/material';
 import Image from 'next/image';
-import { siteNavigation } from '../src/config';
+import { siteNavigation } from '../../../src/config';
 
 /* Image imports */
 import presentationImage from '../public/img/presentation.jpeg';
@@ -18,7 +18,7 @@ const currentExec: CyberVtExec[] = [
 	{
 		name: 'Marissa Muñoz',
 		position: 'President',
-		img: '/img/exec/marissa.jpeg',
+		img: '/img/exec/marissa',
 		bio: "Marissa is a senior pursuing a major in Computer Science with a concentration in Secure Computing and minors in Spanish and Leadership. As President of CyberVT, she leads the club’s executive team, coordinates meetings and club merchandise, and helps organize technical workshops, competitions, professional development events, and SummitCTF. She also leads the Virginia Tech Corps of Cadets Cyber Team and has gained cybersecurity experience through internships and competitions since her freshman year. In her free time, she enjoys playing volleyball, traveling, and spending time with family and friends.",
 	},
 	{
@@ -36,27 +36,27 @@ const currentExec: CyberVtExec[] = [
 	{
 		name: 'Wesley Heltzel',
 		position: 'Attack/Defense Team Lead',
-		img: '/img/exec/wesley.jpg',
+		img: '/img/exec/wesley.jpeg',
 		bio: "Wesley is a senior pursuing a major in Secure Computing. As the Attack/Defense team lead, Wesley leads the weekly Attack/Defense meetings alongside Nathaniel Ahwee-Marrah and acts as team captain for various competitions. He also helps create labs via Virginia Tech's create range to provide training resources for Cyber VT members. In his free time, Wesley enjoys MMA, playing video games, and hanging out with friends.",
 	},
 	{
 		name: 'Rijul Tandon',
 		position: 'Treasurer',
-		img: '/img/exec/default.jpg',
+		img: '/img/exec/default.jpeg',
 		bio: "Rijul is studying Computer Science with a focus in Secure Computing. As the treasurer, Rijul aims to utilize the club's financial resources to maximize opportunities for members in various ways, such as unlocking access to useful learning resources and sponsoring members to attend conferences and competitions across the country.",
 
 	},
 	{
 		name: 'Monty Harford',
 		position: 'Public Relations Officer',
-		img: '/img/exec/monty.jpg',
+		img: '/img/exec/monty.jpeg',
 		bio: "Monty is a senior pursuing a computer science degree with minors in math and cybersecurity. As the public relations officer, Monty leads the marketing team, which manages much of the public facing aspects of the club such as discord, instagram, LinkedIn, and other marketing tasks. Monty is part of the ATB program (formerly DCTC), a track for DOW employment. In his free time, Monty enjoys biking, golfing, going to the gym, and reading.",
 	},
 	{
 		name: 'Sriram Agaram',
 		position: 'SummitCTF Chair',
-		img: '/img/exec/SriramAgaram.jpeg',
-		bio: "Sriram is a Computer Science major and is the lead for Virginia Tech’s annual SummitCTF. Along with Sean, he will organize the competition including creating challenges and coordinating with sponsors to deliver a great experience for beginners and advanced competitors alike.",
+		img: '/img/exec/SriramAgaram.jpg',
+		bio: "Sanjay is a Computational Modeling and Data Analytics major at Virginia Tech, focusing on Cybersecurity and Cryptography, graduating in December 2027. As SummitCTF Chair, Sanjay focuses on the planning and execution of CyberVT's Summit CTF, a hybrid cybersecurity competition engaging with over 450 participants both virtually and on-site. In his free time, he likes to go to the gym, hang out outside with friends, and play soccer.",
 	},
 	{
 		name: 'Gavin Workman',
