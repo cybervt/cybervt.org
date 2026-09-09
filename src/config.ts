@@ -246,6 +246,16 @@ export const siteNavigation: SiteNavigation = {
 				showHeader: true,
 				padding: true,
 			},
+			cyber101: {
+				...defaultNavItem,
+				url: '/cyber101',
+				title: 'Cyber 101',
+				description: 'Cyber 101 courseware and form',
+				externalLink: false,
+				showInNav: true,
+				showHeader: true,
+				padding: true,
+			},
 			// projects: {
 			// 	...defaultNavItem,
 			// 	url: '/projects',
