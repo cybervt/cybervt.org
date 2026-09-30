@@ -42,8 +42,8 @@ const currentExec: CyberVtExec[] = [
 	{
 		name: 'Rijul Tandon',
 		position: 'Treasurer',
-		img: '/img/exec/default.jpg',
-		bio: "Rijul is studying Computer Science with a focus in Secure Computing. As the treasurer, Rijul aims to utilize the club's financial resources to maximize opportunities for members in various ways, such as unlocking access to useful learning resources and sponsoring members to attend conferences and competitions across the country.",
+		img: '/img/exec/rijul.jpeg',
+		bio: "Rijul is a senior pursuing a major in Computational Modeling and Data Analytics with a concentration in Cryptography and Cybersecurity. As Treasurer, Rijul manages the club’s budget funding for events, handles reimbursements, and builds out the travel budgets that get teams to competitions. He also helps with sponsor outreach. In his free time, Rijul enjoys tennis & pickleball, hiking, and logging movies on Letterboxd.",
 
 	},
 	{
@@ -63,6 +63,12 @@ const currentExec: CyberVtExec[] = [
 		position: 'Technical Director',
 		img: '/img/exec/gavin.png',
 		bio: "Gavin is pursuing a Bachelors of Science degree in Computer Science with focus on Cyber Security, graduating in May 2028. As Technical Director, Gavin manages the CyberVT and SummitCTF websites, aiming to make joining the club and staying in the know as easy and intuitive as possible. Gavin will work for the DoW after graduation, but in his free time, Gavin enjoys weightlifting, hanging out with friends, and videogames. ",
+	},
+	{
+		name: 'Gabi Lockefeer',
+		position: 'Marketing Committee',
+		img: '/img/exec/gabi.jpeg',
+		bio: "Gabi is majoring in Cybersecurity Management and Analytics and minoring in National Security and Foreign Affairs, graduating in May 2028. She is part of the marketing committee and focuses on running the club's LinkedIn profile; she keeps followers up to date with club initiatives as well as facilitates professional connections on the platform. In her free time she enjoys spending time outside, trying new coffee shops, and reading.",
 	},
 ];
 
